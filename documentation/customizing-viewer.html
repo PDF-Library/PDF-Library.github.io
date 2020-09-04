@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+        <!-- Title -->
+    <title>DevCloudAPI - How to Customize DevCloudAPI | Embed PDF Viewer with Forms</title>
+
+<!-- Required Meta Tags Always Come First -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content ="Personalize the viewer with your branding for a customized and professional look without any additional development. Find out more here."/>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="https://devcloudapi.foxitsoftware.com/favicon.ico">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
+<!-- CSS Global Compulsory -->
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/bootstrap/bootstrap.min.css">
+<!-- CSS Global Icons -->
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/icon-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/icon-line/css/simple-line-icons.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/icon-etlinefont/style.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/icon-line-pro/style.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/icon-hs/style.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/animate.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/typedjs/typed.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/hamburgers/hamburgers.min.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+
+<!-- CSS Unify -->
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/css/unify-core.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/css/unify-components.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/css/unify-globals.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/fancybox/jquery.fancybox.css">
+
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+
+<!-- CSS Customization -->
+<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/css/custom.css">
+
+
+    
+    <link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/lib/highlight.js/styles/hybrid.min.css">
+    <style>
+        pre {
+            display: block;
+            padding: 9.5px;
+            margin: 0 0 10px;
+            font-size: 13px;
+            line-height: 1.42857143;
+            color: #333333;
+            word-break: break-all;
+            word-wrap: break-word;
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+            pre code {
+                padding: 0;
+                font-size: inherit;
+                color: inherit;
+                white-space: pre-wrap;
+                background-color: transparent;
+                border-radius: 0;
+            }
+
+        .pre-scrollable {
+            max-height: 340px;
+            overflow-y: scroll;
+        }
+
+        .emphesise {
+         /* word-spacing: -0.3em; */
+         font-weight: bold;
+         color: #ff8400;
+         } 
+    </style>
+
+</head>
+
+
+<body dir="ltr">
+    <main>
+
+        <header id="js-header" class="u-header u-header--static">
+            <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+                <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
+                    <div class="container">
+                        <!-- Responsive Toggle Button -->
+                        <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-minus-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                            <span class="hamburger hamburger--slider">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </span>
+                        </button>
+                        <!-- End Responsive Toggle Button -->
+                        <!-- Logo -->
+                        <a href="/index.html" class="navbar-brand d-flex">
+                            <img src="https://devcloudapi.foxitsoftware.com/img/Developer-Cloud-API-Logo.png" alt="PDF Library Developer Cloud API" id="logo" height="50" title="Online PDF | PDF Library | PDF Viewer | PDF Editor">
+                        </a>
+                        <!-- End Logo -->
+                        <!-- Navigation -->
+                            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+                                <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
+                                    <!-- Pages - Portfolios -->
+                                    <li class="nav-item hs-has-sub-menu ">
+                                        <a id="nav-link--pages--portfolio" class="nav-link" href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio" title="PDF Editor | PDF Library SDK Products">PDF-Library Products</a>
+        
+                                        <!-- Submenu (level 2) -->
+                                        <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="https://devcloudapi.foxitsoftware.com/cloud" target="_blank" title="Online PDF Editor">Online PDF Library cloud</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="https://developers.foxitsoftware.com/pdf-sdk" target="_blank" title="PDF SDK">PDF SDK - Foxit</a>
+                                            </li>
+                                            <li class="dropdown-item ">
+                                                <a class="nav-link" href="https://www.foxitsoftware.com/pdf-editor/" target="_blank" title="PDF Editor with Foxit Phantom SDK">PDF to PDF-Form converter SDK</a>
+                                            </li>
+                                        </ul>
+                                        <!-- End Submenu (level 2) -->
+                                    </li>
+                                    <!-- Documentation Intro -->
+                                    <li class="nav-item hs-has-sub-menu ">
+                                            <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio" title="PDF Library SDK Documentation">PDF-Library documentation</a>
+                                        
+                                        <!--   Submenu  (level 2)  -->
+                                        <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
+                                            <li class="nav-item hs-has-sub-menu ">
+                                                <!--  Documentation Submenu (Level 3)  -->
+                                                <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/getting-started.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio" title="PDF Library Intro">PDF Library Getting Started</a>
+                                                <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/getting-started.html" target="_blank" title="PDF Library Home Dashboard" >PDF-Library Dashboard</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/getting-started.html#Projects" target="_blank" title="Online PDF viewer projects">PDF Viewer Projects</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/getting-started.html#CreatingandWorkingonProjects" target="_blank" title="Online PDF Editor Project">Creating PDF-Viewer Projects</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/getting-started.html#UsageandQuotas" target="_blank" title="Online PDF usage">PDF Viewer Set a Usage / Quota</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/getting-started.html#Analytics" target="_blank" title="Online PDF viewer analysis">PDF Viewer Live Analytics</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+        
+                                            <!-- End of Documentation Submenu (Level 3)  -->
+        
+                                            <li class="nav-item hs-has-sub-menu ">
+                                                <!--  Documentation   "Understanding the APIs"  Submenu (Level 3)  -->
+                                                <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/understanding-apis.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio" title="Online PDF APIs">PDF Library Understanding the APIs</a>
+                                                <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="https://www.youtube.com/watch?v=rOUiUSzgLlQ&t=16s" target="_blank" title="Online PDF API video tutorials">PDF-Library APIs Video</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/understanding-apis.html#ViewAPI" >PDF-Library View API</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/understanding-apis.html#AnnotationAPI" >PDF-Library Annotation API</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/understanding-apis.html#FormsAPI" >PDF-Library Form API</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/understanding-apis.html#FormAutomation" title="Online PDF forms">PDF-Library Form Automation</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/understanding-apis.html#CollaborationAPI" title="Online PDF Collaboration">PDF-Library Collaboration API</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!--  End of Documentation understanding APIS Submenu { level 3 }-->
+        
+                                            <li class="nav-item hs-has-sub-menu ">
+                                                <!--  Documentation "Customizing PDF viewer" Submenu (Level 3)  -->
+                                                <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/customizing-viewer.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio">Online PDF Viewer Customizations</a>
+                                                <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="https://www.youtube.com/watch?v=m_wVNsNBLqk&t=46s" target="_blank">PDF-Viewer Customization Video</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/customizing-viewer.html#GeneralOptions" target="_blank">PDF-Library Viewer General Options</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/customizing-viewer.html#ToolbarandSidebar" target="_blank">PDF-Library Viewer Toolbar Customization</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/customizing-viewer.html#Addingyourlogo" target="_blank">PDF-Library Viewer Logo Customization</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/customizing-viewer.html#Changingviewercolors" target="_blank">Online PDF Colour Customizations</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!--   End of Customizing viewer submenu ( level 3 )-->
+        
+                                            <li class="nav-item hs-has-sub-menu ">
+                                                <!--  Documentation "Customizing PDF viewer" Submenu (Level 3)  -->
+                                                <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/integration.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio">PDF Library Integration</a>
+                                                <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="https://www.youtube.com/watch?v=L0BqTQrPcSk" target="_blank">PDF-Library Integration Video</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/integration.html#WorkingwiththeDeveloperCloudAPIPDFViewer" target="_blank">Online PDF viewer embedment</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/integration.html#EmbeddingusingHTML" target="_blank">Online PDF embed with HTML</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/integration.html#Wordpress" target="_blank">Online PDF Wordpress</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/integration.html#Wix" target="_blank">Online PDF with WIX</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/integration.html#AdvancedEmbeddingusingJavaScript" target="_blank">PDF-Library Advanced JavaScript Embedding</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <!--   End of Documentation customizing pdf viewer submenu ( Level 3 )   -->
+
+                                            <li class="nav-item hs-has-sub-menu ">
+                                                <!--  Documentation "Customizing PDF viewer" Submenu (Level 3)  -->
+                                                <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/step-guide.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio">PDF Library User Guide</a>
+                                                <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="https://youtu.be/G21D3QCjuew" target="_blank">DevCloudAPI account registration</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/step-guide.html#EmbedingViewer" >PDF viewer embedment</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/step-guide.html#AnnotationCapability" >PDF viewer adding annotation capability</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/step-guide.html#PDF-FileToPDF-Form" >PDF-file to PDF-form</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/step-guide.html#PDFformEmbed" >PDF-Form web embedment</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/step-guide.html#Real-timeCollaboration" >PDF online collaboration</a>
+                                                    </li>
+                                                    <li class="dropdown-item ">
+                                                        <a class="nav-link" href="/documentation/step-guide.html#Real-timePerformance" >API performance & cost Tracking </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            
+                                        </ul>
+        
+                                        <!--  End Submenu!   -->
+        
+                                    </li>
+                                    <!-- Intro -->
+                                    <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                                        <a href="/contact.html" class="nav-link g-py-7 g-px-0--xl">Contact Us</a>
+                                    </li>
+                                    <li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                                        <a href="/contact.html" class="nav-link g-py-7 g-px-0--xl">Buy Now</a>
+                                    </li>
+                                </ul>
+                        </div>
+                        <!-- End Navigation -->
+                        <div class="d-inline-block g-hidden-md-down g-pos-rel g-valign-middle g-pl-30 g-pl-0--lg">
+                            <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="https://devcloudapi.foxitsoftware.com/cloud">Log In</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+<section class="container g-pt-100 g-pb-60">
+    <div class="row justify-content-center">
+        <div class="col-lg-3">
+            <div id="shortcode6" class="sticky-top">
+                <div class="shortcode-html">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Nav tabs -->
+                            <ul class="nav flex-column u-nav-v1-1 u-nav-primary" role="tablist" data-target="nav-1-1-primary-ver" data-tabs-mobile-type="slide-up-down" data-btn-classes="btn btn-md btn-block rounded-0 u-btn-outline-primary g-mb-20">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#GeneralOptions" role="tab">General Options</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#ToolbarandSidebar" role="tab">Toolbar and Sidebar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#Addingyourlogo" role="tab">Adding your logo</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#Changingviewercolors" role="tab">Changing viewer colors</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" role="tab"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#" role="tab"></a>
+                                </li>
+                            </ul>
+                            <!-- End Nav tabs -->
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="shortcode-scripts">
+                <!-- JS Unify -->
+                <script type="text/plain" src="../../../assets/js/components/hs.tabs.js">
+                </script>
+
+                <!-- JS Plugins Init. -->
+                <script type="text/plain">
+                    $(document).on('ready', function () {
+                    // initialization of tabs
+                    $.HSCore.components.HSTabs.init('[role="tablist"]');
+                    });
+
+                    $(window).on('resize', function () {
+                    setTimeout(function () {
+                    $.HSCore.components.HSTabs.init('[role="tablist"]');
+                    }, 200);
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div class="g-mb-60">
+                <h1 class="g-color-black text-center g-font-weight-600 g-mb-30">Customizing Developer Cloud API </h1>
+                <div class="col-lg-12 g-mb-30">
+                    <div class="row">
+                        <div class="col-lg-12 g-mb-10">
+                            <!-- Article -->
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/m_wVNsNBLqk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- End Article -->
+                        </div>
+                    </div>
+                </div>
+                <p class="g-color-black g-mb-30 g-font-size-18">
+                    With DevCloudAPI, you can access and embed a full document viewer using industry leading rendering technology. But more than that, you are also able to customize some elements of the viewer to make it consistent with your business styling guide for colors and also add your brand to your instance of the viewer. This section will show you how to do this quickly.
+
+<p><strong>Note</strong> You'll get a better understanding of the guides for the separate APIs in this page if you've read the <a href="/documentation/getting-started">Getting Started</a> beforehand.</p>
+                </p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1 g-mb-60"></div>
+                <div class="col-md-10 g-mb-60">
+                    <h2 id="GeneralOptions" class="h4 g-color-black g-font-weight-600"><span class="g-font-size-25"></span>General Options</h2>
+                    <p class="g-color-black g-mb-30 g-font-size-18">
+                        The general options window shows high-level functionality of the viewer such as default file name, user name and more:
+
+<div class="col-md-12 g-mb-60"><p style="text-align:center;"><img class="img-fluid" width="732" height="508" src="https://developers.foxitsoftware.com/kb/wp-content/uploads/developer-cloud-api-foxit-general-viewer-size-options.png"></p></div>
+<h3>Changing your default URL</h3>
+<p>If you want your default URL displayed to be different than the default Developer Cloud API file, modify the ‘File’ option with a server URL of the PDF file you wish to use.</p>
+<p><span style="font-weight: bold;">Note:</span><span style="font-weight: bold;"> </span>Make sure your server has CORS policy enabled to accept cross-reference requests, or this option might not work in some cases.</p>
+<h4>Changing your viewer size</h4>
+<p>Changing the size is one of the first things you will need to do once you embed this to an application, given there are many different dimensions for where you will be placing your viewer. Just modify the Width and Height to your desired size and copy the link again when you use.</p>
+
+                    </p>
+                </div>
+                <div class="col-md-1 g-mb-60"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1 g-mb-60"></div>
+                <div class="col-md-10 flex-md-unordered g-mb-60">
+                    <h2 id="ToolbarandSidebar" class="h4 g-color-black g-font-weight-600"><span class="g-font-size-25"></span>Toolbar and Sidebar</h2>
+                    <p class="g-color-black g-mb-30 g-font-size-18">
+                        <p>Your project’s layout can be customized in the Setup window. The toolbar and sidebar configuration elements are listed out below:</p>
+<div class="col-md-12 g-mb-60"><p style="text-align:center;"><img class="img-fluid" width="781" height="581" src="https://developers.foxitsoftware.com/kb/wp-content/uploads/developer-cloud-api-foxit-toolbar-settings-viewer-sidebar-display-options.png"></p></div>
+<h4><span style="font-weight: bold;">Toolbar Settings</span></h4>
+<h4><span style="font-weight: bold;">Button Layout</span></h4>
+<ul>
+    <li>Full – Default UI</li>
+    <li>View-Only – Removes all editing options as well. Useful for projects where only viewing is necessary (brochures, ads, manuals)
+    <div class="col-md-12 g-mb-60"><p style="text-align:center;"><img class="img-fluid" width="758" height="54" src="https://developers.foxitsoftware.com/kb/wp-content/uploads/developer-cloud-api-foxit-tools-options-commands.png"></p></div></li>
+    <li>Basic Annotation – Provides annotation and markups. Useful for projects where adding markups and annotations are required (designs, presentations, interactive documents)
+    <div class="col-md-12 g-mb-60"><p style="text-align:center;"><img class="img-fluid" width="867" height="107" src="https://developers.foxitsoftware.com/kb/wp-content/uploads/developer-cloud-api-foxit-tools-settings-options-toolbar.png"></p></div></li>
+    <li>You may choose between the default theme or a secondary theme based on Font Awesome Light icons.</li>
+</ul>
+<h4><span style="font-weight: bold;">Sidebar Settings</span></h4>
+<h4><span style="font-weight: bold;">Button Layout</span></h4>
+<ul>
+    <li>Full – Default UI</li>  
+    <li>Comment-Only – Removes bookmarks, layers and search option from the sidebar. Only annotations are available.
+    <div class="col-md-12 g-mb-60"><p style="text-align:center;"><img class="img-fluid" width="313" height="446" src="https://developers.foxitsoftware.com/kb/wp-content/uploads/developer-cloud-api-foxit-comment-list-options.png"></li>
+    <li>You may choose between the default theme or a secondary theme based on Font Awesome Light icons.    </li>
+</ul>
+<p><span style="font-weight: bold;">Note:</span><span style="font-weight: bold;"> </span>There were bug reports that the sidebar does not display by default. If that is the case, please try to <span style="font-weight: bold;">add a simple annotation to the page </span>to trigger the sidebar activity.</p>
+
+                    </p>
+                </div>
+                <div class="col-md-1 g-mb-60"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1 g-mb-60"></div>
+                <div class="col-md-10 g-mb-60">
+                    <h2 id="Addingyourlogo" class="h4 g-color-black g-font-weight-600"><span class="g-font-size-25"></span>Adding your logo</h2>
+                    <p class="g-color-black g-mb-30 g-font-size-18">
+                        <p>You may select to use a new logo by updating the URL field below. You may also control the size of the logo in the Width and Height fields, as well as the positioning of the viewer. Let’s update the logo here for Foxit’s main logo.</p>
+<p><div class="col-md-12 g-mb-60"><img class="img-fluid" width="745" height="311" src="https://developers.foxitsoftware.com/kb/wp-content/uploads/developer-cloud-api-foxit-logo-settings.png"></p></div>
+<p><span style="font-weight: bold;">Banner on top</span></p>
+<p><div class="col-md-12 g-mb-60"><img class="img-fluid" width="1099" height="133" src="https://developers.foxitsoftware.com/kb/wp-content/uploads/developer-cloud-api-foxit-page-split-tools-options.png"></p></div>
+<p>Left of toolbar tabs</p>
+<p><div class="col-md-12 g-mb-60"><img class="img-fluid" width="1099" height="133" src="https://devcloudapi.foxitsoftware.com/media/developer-cloud-api-foxit-tools-fome-tab-options-toolbar.png"></p></div>
+                    </p>
+                </div>
+                <div class="col-md-1 g-mb-60"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1 g-mb-60"></div>
+                <div class="col-md-10 g-mb-60">
+                    <h2 id="Changingviewercolors" class="h4 g-color-black g-font-weight-600"><span class="g-font-size-25"></span>Changing viewer colors</h2>
+                    <p class="g-color-black g-mb-30 g-font-size-18">
+                        <p>The set of default colors are provided below with the DevCloudAPI original color guide styling:</p>
+<p><div class="col-md-12 g-mb-60"><img class="img-fluid" width="738" height="147" src="https://devcloudapi.foxitsoftware.com/media/developer-cloud-api-foxit-colours-options-tones.png"></p></div>
+<p>Let’s change that into Foxit’s main styling orange guide and also add a Foxit main logo on top by changing the URL into an image hosted in our website:</p>
+<p><div class="col-md-12 g-mb-60"><img class="img-fluid" width="740" height="508" src="https://devcloudapi.foxitsoftware.com/media/developer-cloud-api-foxit-colour-logo-settings.png"></p></div>
+<p>This is how our viewer looks now:</p>
+<p><div class="col-md-12 g-mb-60"><img class="img-fluid" width="1467" height="940" src="https://devcloudapi.foxitsoftware.com/media/developer-cloud-api-foxit-getting-started-guide-preview.png"></p></div>
+<p><span style="font-weight: bold;">Note: </span>Any time you make a change in your viewer customization, make sure to copy the link and paste again in your environment to see the changes.</p>
+<br>
+<p>For more documentation please <a href="https://devcloudapi.foxitsoftware.com/documentation">click here</a> or create an account <a href="https://devcloudapi.foxitsoftware.com/cloud">here.</a></p>
+
+                    </p>
+                </div>
+                <div class="col-md-1 g-mb-60"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1 g-mb-60"></div>
+                <div class="col-md-10 g-mb-60">
+                    <h2 id="" class="h4 g-color-black g-font-weight-600"><span class="g-font-size-25"></span></h2>
+                    <p class="g-color-black g-mb-30 g-font-size-18">
+                        
+                    </p>
+                </div>
+                <div class="col-md-1 g-mb-60"></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-1 g-mb-60"></div>
+                <div class="col-md-10 g-mb-60">
+                    <h2 id="" class="h4 g-color-black g-font-weight-600"><span class="g-font-size-25"></span></h2>
+                    <p class="g-color-black g-mb-30 g-font-size-18">
+                        
+                    </p>
+                </div>
+                <div class="col-md-1 g-mb-60"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+                <!-- Footer -->
+<div id="contacts-section" class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
+    <div class="container">
+        <div class="row">
+            <!-- Footer Content -->
+            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">About Us</h2>
+                </div>
+
+                <p>Foxit is the industry leader in <a href="https://developers.FoxitSoftware.com" target="_blank">PDF SDK Technology</a>. We help you to add complete PDF functionality to your project and develop across all platforms and environments on one Core API.</p>
+            </div>
+            <!-- End Footer Content -->
+            <!-- Footer Content -->
+            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Other Products</h2>
+                </div>
+
+                <article>
+                    <h3 class="h6 g-mb-2">
+                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/windows/" target="_blank">Windows PDF SDK</a>
+                    </h3>
+                </article>
+
+                <hr class="g-brd-white-opacity-0_1 g-my-10">
+
+                <article>
+                    <h3 class="h6 g-mb-2">
+                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/android" target="_blank">Android PDF SDK</a>
+                    </h3>
+                </article>
+
+                <hr class="g-brd-white-opacity-0_1 g-my-10">
+
+                <article>
+                    <h3 class="h6 g-mb-2">
+                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/ios/" target="_blank">iOS PDF SDK</a>
+                    </h3>
+                </article>
+
+                <hr class="g-brd-white-opacity-0_1 g-my-10">
+
+                <article>
+                    <h3 class="h6 g-mb-2">
+                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/uwp/" target="_blank">UWP PDF SDK</a>
+                    </h3>
+                </article>
+
+                <hr class="g-brd-white-opacity-0_1 g-my-10">
+
+                <article>
+                    <h3 class="h6 g-mb-2">
+                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/mac/" target="_blank">Mac PDF SDK</a>
+                    </h3>
+                </article>
+
+                <hr class="g-brd-white-opacity-0_1 g-my-10">
+
+                <article>
+                    <h3 class="h6 g-mb-2">
+                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/linux/" target="_blank">Linux PDF SDK</a>
+                    </h3>
+                </article>
+
+                <hr class="g-brd-white-opacity-0_1 g-my-10">
+
+                <article>
+                    <h3 class="h6 g-mb-2">
+                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/web/" target="_blank">Web PDF SDK</a>
+                    </h3>
+                </article>
+            </div>
+            <!-- End Footer Content -->
+            <!-- Footer Content -->
+            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
+                <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Useful Links</h2>
+                </div>
+
+                <nav class="text-uppercase1">
+                    <ul class="list-unstyled g-mt-minus-10 mb-0">
+                        <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                            <h4 class="h6 g-pr-20 mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/case-studies/">Case Studies</a>
+                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                            </h4>
+                        </li>
+                        <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                            <h4 class="h6 g-pr-20 mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/industry/">Industry</a>
+                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                            </h4>
+                        </li>
+                        <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                            <h4 class="h6 g-pr-20 mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/about-us/">About Us</a>
+                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                            </h4>
+                        </li>
+                        <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
+                            <h4 class="h6 g-pr-20 mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/about-us/sdk-press-releases/">Press Release</a>
+                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                            </h4>
+                        </li>
+                        <li class="g-pos-rel g-py-10">
+                            <h4 class="h6 g-pr-20 mb-0">
+                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/support/">Contact Us</a>
+                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
+                            </h4>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- End Footer Content -->
+            <!-- Footer Content -->
+            <div class="col-lg-3 col-md-6">
+                <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
+                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Contacts</h2>
+                </div>
+
+                <address class="g-bg-no-repeat g-font-size-12 mb-0" style="background-image: url(/assets/img/maps/map2.png);">
+                    <!-- Location -->
+                    <div class="d-flex g-mb-20">
+                        <div class="g-mr-10">
+                            <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                <i class="fa fa-map-marker"></i>
+                            </span>
+                        </div>
+                        <p class="mb-0">41841 Albrae Street, <br> Fremont, CA 94538, USA</p>
+                    </div>
+                    <!-- End Location -->
+                    <!-- Phone -->
+                    <div class="d-flex g-mb-20">
+                        <div class="g-mr-10">
+                            <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                        </div>
+                        <p class="mb-0">Sales: 1-866-680-3668 <br> Support: 1-866-693-6948</p>
+                    </div>
+                    <!-- End Phone -->
+                    <!-- Email and Website -->
+                    <div class="d-flex g-mb-20">
+                        <div class="g-mr-10">
+                            <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
+                                <i class="fa fa-globe"></i>
+                            </span>
+                        </div>
+                        <p class="mb-0">
+                            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="mailto:sales@foxitsoftware.com">sales@foxitsoftware.com</a>
+                            <br>
+                            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com">developers.foxitsoftware.com</a>
+                        </p>
+                    </div>
+                    <!-- End Email and Website -->
+                </address>
+            </div>
+            <!-- End Footer Content -->
+        </div>
+    </div>
+</div>
+<!-- End Footer -->
+
+                <!-- Copyright Footer -->
+<footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
+                <div class="d-lg-flex">
+                    <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2020 &copy; <a href="https://www.foxitsoftware.com" title="Foxit Software">Foxit Software</a> Incorporated. All Rights Reserved.</small>
+                    <ul class="u-list-inline">
+                        <li class="list-inline-item">
+                            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/about-us/privacy-policy/">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/terms">Terms of Service</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/Support">Support</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4 align-self-center">
+                <ul class="list-inline text-center text-md-right mb-0">
+                    <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Facebook">
+                        <a href="https://www.facebook.com/foxitsoftware" class="g-color-white-opacity-0_5 g-color-white--hover">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Youtube">
+                        <a href="https://www.youtube.com/channel/UCgh3Bs-EnS4Lwv4Cb96lG_Q" class="g-color-white-opacity-0_5 g-color-white--hover">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                        <a href="https://www.linkedin.com/company/foxit-corporation" class="g-color-white-opacity-0_5 g-color-white--hover">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Twitter">
+                        <a href="https://twitter.com/foxitsoftware" class="g-color-white-opacity-0_5 g-color-white--hover">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Copyright Footer -->
+
+        <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{
+     "bottom": 15,
+     "right": 15
+   }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+    <i class="hs-icon hs-icon-arrow-top"></i>
+</a>
+
+    </main>
+
+    
+
+    <div class="u-outer-spaces-helper"></div>
+
+    <!-- JS Global Compulsory -->
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/popper.js/popper.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/bootstrap/bootstrap.min.js"></script>
+    
+    
+    <!-- JS Implementing Plugins -->
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/appear.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/slick-carousel/slick/slick.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/typedjs/typed.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/slick-carousel/slick/slick.js"></script>
+    
+    <!-- JS Unify -->
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/hs.core.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.carousel.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.header.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.counter.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.scrollbar.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.tabs.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/components/text-animation/hs.text-slideshow.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.go-to.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.popup.js"></script>
+    
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+    
+    <!-- JS Revolution Slider -->
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    
+    
+    <!-- JS Customization -->
+    <script src="https://devcloudapi.foxitsoftware.com/assets/js/custom.js"></script>
+    
+    
+    <!-- JS Plugins Init. -->
+    <script>
+        $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
+    
+            // initialization of tabs
+            $.HSCore.components.HSTabs.init('[role="tablist"]');
+    
+            // initialization of text animation (typing)
+            $(".u-text-animation.u-text-animation--typing").typed({
+                strings: [
+                    "document analytics",
+                    "engagement tracking",
+                    "lead insights"
+                ],
+                typeSpeed: 60,
+                loop: true,
+                backDelay: 1500
+            });
+    
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+    
+            // initialization of HSScrollBar component
+            $.HSCore.components.HSScrollBar.init($('.js-scrollbar'));
+    
+            // initialization of popups
+            $.HSCore.components.HSPopup.init('.js-fancybox');
+    
+        });
+    
+        $(window).on('load', function () {
+            // initialization of header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+    
+            // initialization of HSMegaMenu component
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+        });
+    
+        $(window).on('resize', function () {
+            setTimeout(function () {
+                $.HSCore.components.HSTabs.init('[role="tablist"]');
+            }, 200);
+        });
+    </script>
+
+
+    </body>
+
+</html>
