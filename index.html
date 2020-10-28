@@ -1,94 +1,48 @@
-
+﻿
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-        <!-- Title -->
-    <title>Online PDF | PDF Library | PDF Editor | Foxit Developer Cloud API PDF SDK Library.</title>
+    <!-- Title -->
+    <title>PDF Library - PDF SDK, PDF Library for C#, .NET, JavaScript, ASP.NET, Java, VB, C&#x2B;&#x2B; in windows, linux and web with PDF API provided by PDF library, PDF SDK - All-in-one Information Portal for Software Development - PDF Library</title>
+    <meta name="description" content="PDF Library and PDF SDK in JavaScript, C#, Java, ASP.Net, ASP, PHP with PDF API by PDF Library" />
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-<!-- Required Meta Tags Always Come First -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="description" content="PDF Library | Online PDF | PDF Editor that Embeds a powerful PDF viewer in your web app with zero lines of code. State-of-the-art analytics and collaboration tools. Get DevCloudAPI for free here."/>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min.css">
+    <!-- CSS Global Icons -->
+    <link rel="stylesheet" href="/assets/vendor/icon-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/vendor/icon-line/css/simple-line-icons.css">
+    <link rel="stylesheet" href="/assets/vendor/icon-etlinefont/style.css">
+    <link rel="stylesheet" href="/assets/vendor/icon-line-pro/style.css">
+    <link rel="stylesheet" href="/assets/vendor/icon-hs/style.css">
+    <link rel="stylesheet" href="/assets/vendor/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="/assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+    <link rel="stylesheet" href="/assets/vendor/slick-carousel/slick/slick.css">
+    <link rel="stylesheet" href="/assets/vendor/animate.css">
+    <link rel="stylesheet" href="/assets/vendor/hs-megamenu/src/hs.megamenu.css">
+    <link rel="stylesheet" href="/assets/vendor/hamburgers/hamburgers.min.css">
 
-<!-- Favicon -->
-<link rel="shortcut icon" href="https://devcloudapi.foxitsoftware.com/favicon.ico">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C500%2C600%2C700%7CPlayfair+Display%7CRoboto%7CRaleway%7CSpectral%7CRubik">
-<!-- CSS Global Compulsory -->
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/bootstrap/bootstrap.min.css">
-<!-- CSS Global Icons -->
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/icon-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/icon-line/css/simple-line-icons.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/icon-etlinefont/style.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/icon-line-pro/style.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/icon-hs/style.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/animate.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/slick-carousel/slick/slick.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/typedjs/typed.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/hs-megamenu/src/hs.megamenu.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/hamburgers/hamburgers.min.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- CSS Unify -->
+    <link rel="stylesheet" href="/assets/css/unify-core.css">
+    <link rel="stylesheet" href="/assets/css/unify-components.css">
+    <link rel="stylesheet" href="/assets/css/unify-globals.css">
 
-<!-- CSS Unify -->
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/css/unify-core.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/css/unify-components.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/css/unify-globals.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/fancybox/jquery.fancybox.css">
-
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsparallaxer.css">
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
-
-<!-- CSS Customization -->
-<link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/assets/css/custom.css">
-
-
-    
-    <link rel="stylesheet" href="https://devcloudapi.foxitsoftware.com/lib/highlight.js/styles/hybrid.min.css">
-    <style>
-        pre {
-            display: block;
-            padding: 9.5px;
-            margin: 0 0 10px;
-            font-size: 13px;
-            line-height: 1.42857143;
-            color: #333333;
-            word-break: break-all;
-            word-wrap: break-word;
-            background-color: #f5f5f5;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-            pre code {
-                padding: 0;
-                font-size: inherit;
-                color: inherit;
-                white-space: pre-wrap;
-                background-color: transparent;
-                border-radius: 0;
-            }
-
-        .pre-scrollable {
-            max-height: 340px;
-            overflow-y: scroll;
-        }
-
-        .emphesise {
-         /* word-spacing: -0.3em; */
-         font-weight: bold;
-         color: #52c8d4;
-         } 
-    </style>
-
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
-
-<body dir="ltr">
+<body>
     <main>
         <!-- Header -->
         <header id="js-header" class="u-header u-header--static">
-            <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10">
+            <div class="u-header__section u-header__section--light g-transition-0_3 g-py-10" style="background-color: #f9fdf9;">
                 <nav class="js-mega-menu navbar navbar-expand-lg hs-menu-initialized hs-menu-horizontal">
                     <div class="container">
                         <!-- Responsive Toggle Button -->
@@ -101,917 +55,1071 @@
                         </button>
                         <!-- End Responsive Toggle Button -->
                         <!-- Logo -->
-                        <!-- <a href="/index.html" class="navbar-brand d-flex">
-                            <img src="https://devcloudapi.foxitsoftware.com/img/Developer-Cloud-API-Logo.png" alt="PDF Library Developer Cloud API" id="logo" height="50" title="Online PDF | PDF Library | PDF Viewer | PDF Editor">
-                        </a> -->
-                        <a href="/index.html" class="navbar-brand d-flex">
-                            <img src="/images/newlogo.png" alt="PDF Library" id="logo" height="70" width="160"title="PDF Library | Online PDF | PDF Viewer | PDF Editor">
+                        <a href="index.html" class="navbar-brand d-flex">
+                            <img src="/assets/img/logo/logo.png" alt="PDF Library from Adobe, PDF SDK, PDF Online, PDF Cloud, PDF Desktop" />
                         </a>
                         <!-- End Logo -->
                         <!-- Navigation -->
-                            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
-                                <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">
-                                    <!-- Pages - Portfolios -->
-                                    <li class="nav-item hs-has-sub-menu ">
-                                        <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio" title="PDF Library SDK Documentation">PDF-Library documentation</a>
-                                    
-                                    <!--   Submenu  (level 2)  -->
-                                    <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
-                                        <li class="nav-item hs-has-sub-menu ">
-                                            <!--  Documentation Submenu (Level 3)  -->
-                                            <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/getting-started.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio" title="PDF Library Intro">PDF Library Getting Started</a>
-                                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/getting-started.html" target="_blank" title="PDF Library Home Dashboard" >PDF-Library Dashboard</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/getting-started.html#Projects" target="_blank" title="Online PDF viewer projects">PDF Viewer Projects</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/getting-started.html#CreatingandWorkingonProjects" target="_blank" title="Online PDF Editor Project">Creating PDF-Viewer Projects</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/getting-started.html#UsageandQuotas" target="_blank" title="Online PDF usage">PDF Viewer Set a Usage / Quota</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/getting-started.html#Analytics" target="_blank" title="Online PDF viewer analysis">PDF Viewer Live Analytics</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-    
-                                        <!-- End of Documentation Submenu (Level 3)  -->
-    
-                                        <li class="nav-item hs-has-sub-menu ">
-                                            <!--  Documentation   "Understanding the APIs"  Submenu (Level 3)  -->
-                                            <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/understanding-apis.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio" title="Online PDF APIs">PDF Library Understanding the APIs</a>
-                                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="https://www.youtube.com/watch?v=rOUiUSzgLlQ&t=16s" target="_blank" title="Online PDF API video tutorials">PDF-Library APIs Video</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/understanding-apis.html#ViewAPI" >PDF-Library View API</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/understanding-apis.html#AnnotationAPI" >PDF-Library Annotation API</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/understanding-apis.html#FormsAPI" >PDF-Library Form API</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/understanding-apis.html#FormAutomation" title="Online PDF forms">PDF-Library Form Automation</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/understanding-apis.html#CollaborationAPI" title="Online PDF Collaboration">PDF-Library Collaboration API</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--  End of Documentation understanding APIS Submenu { level 3 }-->
-    
-                                        <li class="nav-item hs-has-sub-menu ">
-                                            <!--  Documentation "Customizing PDF viewer" Submenu (Level 3)  -->
-                                            <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/customizing-viewer.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio">Online PDF Viewer Customizations</a>
-                                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="https://www.youtube.com/watch?v=m_wVNsNBLqk&t=46s" target="_blank">PDF-Viewer Customization Video</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/customizing-viewer.html#GeneralOptions" target="_blank">PDF-Library Viewer General Options</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/customizing-viewer.html#ToolbarandSidebar" target="_blank">PDF-Library Viewer Toolbar Customization</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/customizing-viewer.html#Addingyourlogo" target="_blank">PDF-Library Viewer Logo Customization</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/customizing-viewer.html#Changingviewercolors" target="_blank">Online PDF Colour Customizations</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--   End of Customizing viewer submenu ( level 3 )-->
-    
-                                        <li class="nav-item hs-has-sub-menu ">
-                                            <!--  Documentation "Customizing PDF viewer" Submenu (Level 3)  -->
-                                            <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/integration.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio">PDF Library Integration</a>
-                                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="https://www.youtube.com/watch?v=L0BqTQrPcSk" target="_blank">PDF-Library Integration Video</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/integration.html#WorkingwiththeDeveloperCloudAPIPDFViewer" target="_blank">Online PDF viewer embedment</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/integration.html#EmbeddingusingHTML" target="_blank">Online PDF embed with HTML</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/integration.html#Wordpress" target="_blank">Online PDF Wordpress</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/integration.html#Wix" target="_blank">Online PDF with WIX</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/integration.html#AdvancedEmbeddingusingJavaScript" target="_blank">PDF-Library Advanced JavaScript Embedding</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <!--   End of Documentation customizing pdf viewer submenu ( Level 3 )   -->
-
-                                        <li class="nav-item hs-has-sub-menu ">
-                                            <!--  Documentation "Customizing PDF viewer" Submenu (Level 3)  -->
-                                            <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/step-guide.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio">PDF Library User Guide</a>
-                                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="https://youtu.be/G21D3QCjuew" target="_blank">DevCloudAPI account registration</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/step-guide.html#EmbedingViewer" >PDF viewer embedment</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/step-guide.html#AnnotationCapability" >PDF viewer adding annotation capability</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/step-guide.html#PDF-FileToPDF-Form" >PDF-file to PDF-form</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/step-guide.html#PDFformEmbed" >PDF-Form web embedment</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/step-guide.html#Real-timeCollaboration" >PDF online collaboration</a>
-                                                </li>
-                                                <li class="dropdown-item ">
-                                                    <a class="nav-link" href="/documentation/step-guide.html#Real-timePerformance" >API performance & cost Tracking </a>
-                                                </li>
-                                            </ul>
-                                        </li>
-
-
-                                       
-                                        
-                                        
-                                    </ul>
-    
-                                    <!--  End Submenu!   -->
-    
+                        <!--<div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg g-mr-40--lg" id="navBar">
+                            <ul class="navbar-nav text-uppercase g-pos-rel g-font-weight-600 ml-auto">-->
+                        <!-- Intro -->
+                        <!--<li class="nav-item active g-mx-10--lg g-mx-15--xl">
+                            <a href="index.html" class="nav-link g-py-7 g-px-0">Intro</a>
+                        </li>-->
+                        <!-- End Intro -->
+                        <!-- Home -->
+                        <!--<li class="hs-has-mega-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut" data-max-width="60%" data-position="left">
+                            <a id="mega-menu-home" class="nav-link g-py-7 g-px-0" href="#" aria-haspopup="true" aria-expanded="false">
+                                Home
+                                <i class="hs-icon hs-icon-arrow-bottom g-font-size-11 g-ml-7"></i>
+                            </a>-->
+                        <!-- Mega Menu -->
+                        <!--<div class="w-100 hs-mega-menu u-shadow-v11 font-weight-normal g-brd-top g-brd-primary g-brd-top-2 g-bg-white g-mt-18 g-mt-8--lg--scrolling" aria-labelledby="mega-menu-home">
+                            <div class="row align-items-stretch no-gutters">-->
+                        <!-- Home (col) -->
+                        <!--<div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-default.html" class="nav-link">Default</a>
                                 </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-incredible.html" class="nav-link">Incredible</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-studio.html" class="nav-link">Studio</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-allure.html" class="nav-link">Allure</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-inspire.html" class="nav-link">Inspire</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-portfolio.html" class="nav-link">Portfolio</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-creative.html" class="nav-link">Creative</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-projects.html" class="nav-link">Projects</a>
+                                </li>
+                            </ul>
+                        </div>-->
+                        <!-- End Home (col) -->
+                        <!-- Home (col) -->
+                        <!--<div class="col-lg-6 g-brd-left--lg g-brd-gray-light-v5">
+                            <ul class="list-unstyled">
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-discover.html" class="nav-link">Discover</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-brave.html" class="nav-link">Brave</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-business.html" class="nav-link">Business</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-corporate.html" class="nav-link">Corporate</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-web-agency.html" class="nav-link">Web Agency</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-aspire.html" class="nav-link">Aspire</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-showcase.html" class="nav-link">Showcase</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a href="unify-main/home/home-news.html" class="nav-link">News</a>
+                                </li>
+                            </ul>
+                        </div>-->
+                        <!-- End Home (col) -->
+                        <!--</div>
+                        </div>-->
+                        <!-- End Mega Menu -->
+                        <!--</li>-->
+                        <!-- End Home -->
+                        <!-- Pages -->
+                        <!--<li class="hs-has-sub-menu nav-item  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                            <a id="nav-link-pages" class="nav-link g-py-7 g-px-0" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-pages">Pages</a>
 
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-pages" aria-labelledby="nav-link-pages">-->
+                        <!-- Pages - About -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--about" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--about">About</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--about" aria-labelledby="nav-link--pages--about">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-about-1.html">About 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-about-2.html">About 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-about-3.html">About 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-about-4.html">About 4</a>
+                            </li>
 
-                                    <li class="nav-item hs-has-sub-menu ">
-                                        <a id="nav-link--pages--portfolio" class="nav-link" href="javascript:void(0);" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio" title="PDF Editor | PDF Library SDK Products">PDF-Library Products</a>
-        
-                                        <!-- Submenu (level 2) -->
-                                        <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
-                                            <li class="dropdown-item ">
-                                                <a class="nav-link" href="https://devcloudapi.foxitsoftware.com/cloud" target="_blank" title="Online PDF Editor">Online PDF Library cloud</a>
-                                            </li>
-                                            <li class="dropdown-item ">
-                                                <a class="nav-link" href="https://developers.foxitsoftware.com/pdf-sdk" target="_blank" title="PDF SDK">PDF SDK - Foxit</a>
-                                            </li>
-                                            <li class="dropdown-item ">
-                                                <a class="nav-link" href="https://www.foxitsoftware.com/pdf-editor/" target="_blank" title="PDF Editor with Foxit Phantom SDK">PDF to PDF-Form converter SDK</a>
-                                            </li>
-                                        </ul>
-                                        <!-- End Submenu (level 2) -->
-                                    </li>
-                                    <!-- Documentation Intro -->
-                                    <li class="nav-item hs-has-sub-menu ">
-                                        <!--  Documentation Submenu (Level 3)  Online PDF Comparison and Pricing  -->
-                                        <a id="nav-link--pages--portfolio" class="nav-link" href="/documentation/comparisonAndPricing.html" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio" title="PDF Library Intro">Online PDF-Library Comparison & Pricing</a>
-                                        <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-1 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
-                                            <li class="dropdown-item ">
-                                                <a class="nav-link" href="/documentation/comparisonAndPricing.html" target="_blank" title="PDF Library Home Dashboard" >Online PDF-Library vs PDF-SDK Web</a>
-                                            </li>
-                                            <li class="dropdown-item ">
-                                                <a class="nav-link" href="/documentation/comparisonAndPricing.html#Pricing" target="_blank" title="Online PDF usage">PDF Library Subscriptions</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <!-- Intro -->
-                                    <!-- <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                                        <a href="/contact.html" class="nav-link g-py-7 g-px-0--xl">Contact Us</a>
-                                    </li> -->
-                                    <!-- <li class="nav-item  g-mx-10--lg g-mx-15--xl">
-                                        <a href="/contact.html" class="nav-link g-py-7 g-px-0--xl">Buy Now</a>
-                                    </li> -->
-                                </ul>
-                        </div>
+                            <li class="dropdown-divider"></li>
+
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-about-me-1.html">About me 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-about-me-2.html">About me 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-about-me-3.html">About me 3</a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Pages - About -->
+                        <!-- Pages - Portfolios -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--portfolio" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--portfolio">Portfolios</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-2 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--portfolio" aria-labelledby="nav-link--pages--portfolio">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-case-study-1.html">Case Studies 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-case-study-2.html">Case Studies 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-single-item-1.html">Single item 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-single-item-2.html">Single item 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-single-item-3.html">Single item 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-single-item-4.html">Single item 4</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-single-item-5.html">Single item 5</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-single-item-6.html">Single item 6</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-single-item-7.html">Single item 7</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-single-item-8.html">Single item 8</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-portfolio-single-item-9.html">Single item 9</a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Pages - Portfolios -->
+                        <!-- Pages - Login &amp; Signup -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--login-signup" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--login-signup">Login &amp; Signup</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-2 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--login-signup" aria-labelledby="nav-link--pages--login-signup">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-and-signup-1.html">Login &amp; Signup</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-1.html">Signup 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-2.html">Signup 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-3.html">Signup 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-4.html">Signup 4</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-5.html">Signup 5</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-6.html">Signup 6</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-7.html">Signup 7</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-8.html">Signup 8</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-9.html">Signup 9</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-10.html">Signup 10</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-11.html">Signup 11</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-signup-12.html">Signup 12</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-1.html">login 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-2.html">Login 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-3.html">Login 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-4.html">Login 4</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-5.html">Login 5</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-6.html">Login 6</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-7.html">Login 7</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-8.html">Login 8</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-9.html">Login 9</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-10.html">Login 10</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-11.html">Login 11</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-login-12.html">Login 12</a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Pages - Login &amp; Signup -->
+                        <!-- Pages - Services -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--services" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--services">Services</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--services" aria-labelledby="nav-link--pages--services">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-services-1.html">Services 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-services-2.html">Services 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-services-3.html">Services 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-services-4.html">Services 4</a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Pages - Services -->
+                        <!-- Pages - Search results -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--search-result" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--search-result">Search results</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--search-result" aria-labelledby="nav-link--pages--search-result">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-search-results-grid-veiw-1.html">Grid View</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-search-results-grid-veiw-left-sidebar-1.html">Grid View <span class="g-opacity-0_5">(with Sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-search-results-list-veiw-1.html">List View 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-search-results-list-veiw-2.html">List View 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-search-results-list-veiw-left-sidebar-1.html">List View <span class="g-opacity-0_5">(with Sidebar)</span></a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Pages - Search results -->
+                        <!-- Pages - Profiles -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--profile" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--profile">Profiles</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-2 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--profile" aria-labelledby="nav-link--pages--profile">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-main-1.html">Main</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-profile-1.html">User</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-projects-1.html">Projects</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-comments-1.html">Comments</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-history-1.html">History</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-reviews-1.html">Reviews</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-settings-1.html">Settings</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-users-1.html">Contacts 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-users-1-full-width.html">Contacts 1 <span class="g-opacity-0_5">(full width)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-users-2.html">Contacts 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-profile-users-2-full-width.html">Contacts 2 <span class="g-opacity-0_5">(full width)</span></a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Pages - Profiles -->
+                        <!-- Pages - Сontacts -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--contacts" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--contacts">Сontacts</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-2 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--contacts" aria-labelledby="nav-link--pages--contacts">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-contacts-1.html">Сontacts 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-contacts-2.html">Сontacts 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-contacts-3.html">Сontacts 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-contacts-4.html">Сontacts 4</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-contacts-5.html">Сontacts 5</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-contacts-6.html">Сontacts 6</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-contacts-7.html">Сontacts 7</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-contacts-8.html">Сontacts 8</a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Pages - Сontacts -->
+                        <!-- Pages - Jobs -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--jobs" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--jobs">Jobs</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--jobs" aria-labelledby="nav-link--pages--jobs">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-jobs-1.html">Jobs</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-jobs-description-right-sidebar-1.html">Jobs Description</a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Pages - Jobs -->
+                        <!-- Pages - Pricing -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="unify-main/pages/page-pricing-1.html">Pricing</a>
+                        </li>-->
+                        <!-- End Pages - Pricing -->
+                        <!-- Pages - FAQ -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--faq" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--faq">FAQ</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--faq" aria-labelledby="nav-link--pages--faq">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-faq-1.html">FAQ 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/pages/page-faq-2.html">FAQ 2</a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Pages - FAQ -->
+                        <!-- Pages - Others -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--others" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--others">Others</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--others" aria-labelledby="nav-link--pages--others">-->
+                        <!-- Clients -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="unify-main/pages/page-clients-1.html">Clients</a>
+                        </li>-->
+                        <!-- End Clients -->
+                        <!-- Terms -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="unify-main/pages/page-terms-1.html">Terms</a>
+                        </li>-->
+                        <!-- End Terms -->
+                        <!-- Сookies -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="unify-main/pages/page-cookies-1.html">Сookies</a>
+                        </li>-->
+                        <!-- End Сookies -->
+                        <!-- Invoice -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="unify-main/pages/page-invoice-1.html">Invoice</a>
+                        </li>-->
+                        <!-- End Invoice -->
+                        <!-- 404 -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--404" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--404">404</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2 " id="nav-submenu--pages--404" aria-labelledby="nav-link--pages--404">
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="specialty-pages/404/404-1.html">404 1</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="specialty-pages/404/404-2.html">404 2</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                        <!-- End 404 -->
+                        <!-- Coming Soon -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--coming-soon" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--coming-soon">Coming Soon</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2 " id="nav-submenu--pages--coming-soon" aria-labelledby="nav-link--pages--coming-soon">
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="specialty-pages/coming-soon/page-coming-soon-1.html">Coming Soon</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                        <!-- End Coming Soon -->
+                        <!--</ul>
+                        </li>-->
+                        <!-- End Pages - Others -->
+                        <!--</ul>
+                        </li>-->
+                        <!-- End Pages -->
+                        <!-- Blog -->
+                        <!--<li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                            <a id="nav-link--blog" class="nav-link g-py-7 g-px-0" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--blog">Blog</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu--blog" aria-labelledby="nav-link--blog">-->
+                        <!-- Blog - Minimal -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--blog--minimal" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--blog--minimal">Minimal</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--blog--minimal" aria-labelledby="nav-link--pages--blog--minimal">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-1.html">Minimal 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-1-left-sidebar.html">Minimal 1 <span class="g-opacity-0_5">(left sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-1-right-sidebar.html">Minimal 1 <span class="g-opacity-0_5">(right sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-2.html">Minimal 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-2-left-sidebar.html">Minimal 2 <span class="g-opacity-0_5">(left sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-2-right-sidebar.html">Minimal 2 <span class="g-opacity-0_5">(right sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-3.html">Minimal 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-3-left-sidebar.html">Minimal 3 <span class="g-opacity-0_5">(left sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-3-right-sidebar.html">Minimal 3 <span class="g-opacity-0_5">(right sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-4.html">Minimal 4</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-4-left-sidebar.html">Minimal 4 <span class="g-opacity-0_5">(left sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-minimal-4-right-sidebar.html">Minimal 4 <span class="g-opacity-0_5">(right sidebar)</span></a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Blog - Minimal -->
+                        <!-- Blog - Grid Background -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--blog--grid-bg" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--blog--grid-bg">Grid Background</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--blog--grid-bg" aria-labelledby="nav-link--pages--blog--grid-bg">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-background-overlay-2.html">Column 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-background-overlay-left-sidebar.html">Column 2 <span class="g-opacity-0_5">(left sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-background-overlay-right-sidebar.html">Column 2 <span class="g-opacity-0_5">(right sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-background-overlay-3.html">Column 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-background-overlay-3-fullwidth.html">Column 3 <span class="g-opacity-0_5">(full width)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-background-overlay-4.html">Column 4</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-background-overlay-4-fullwidth.html">Column 4 <span class="g-opacity-0_5">(full width)</span></a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Blog - Grid Background -->
+                        <!-- Blog - Grid Classic -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--blog--grid-classic" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--blog--grid-classic">Grid Classic</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--blog--grid-classic" aria-labelledby="nav-link--pages--blog--grid-classic">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-classic-2.html">Column 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-classic-left-sidebar.html">Column 2 <span class="g-opacity-0_5">(left sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-classic-right-sidebar.html">Column 2 <span class="g-opacity-0_5">(right sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-classic-3.html">Column 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-classic-3-fullwidth.html">Column 3 <span class="g-opacity-0_5">(full width)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-classic-4.html">Column 4</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-classic-4-fullwidth.html">Column 4 <span class="g-opacity-0_5">(full width)</span></a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Blog - Grid Classic -->
+                        <!-- Blog - Grid Modern -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--blog--grid-modern" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--blog--grid-modern">Grid Modern</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--blog--grid-modern" aria-labelledby="nav-link--pages--blog--grid-modern">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-modern-1.html">Modern 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-modern-2.html">Modern 2</a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Blog - Grid Modern -->
+                        <!-- Blog - Grid Overlap -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--blog--grid-overlap" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--blog--grid-overlap">Grid Overlap</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--blog--grid-overlap" aria-labelledby="nav-link--pages--blog--grid-overlap">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-overlap-2.html">Column 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-overlap-left-sidebar.html">Column 2 <span class="g-opacity-0_5">(left sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-overlap-right-sidebar.html">Column 2 <span class="g-opacity-0_5">(right sidebar)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-overlap-3.html">Column 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-overlap-3-fullwidth.html">Column 3 <span class="g-opacity-0_5">(full width)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-grid-overlap-4-fullwidth.html">Column 4 <span class="g-opacity-0_5">(full width)</span></a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Blog - Grid Overlap -->
+                        <!-- Blog - Masonry -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--blog--masonry" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--blog--masonry">Masonry</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--blog--masonry" aria-labelledby="nav-link--pages--blog--masonry">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-masonry-col-2.html">Column 2</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-masonry-col-3.html">Column 3</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-masonry-col-3-fullwidth.html">Column 3 <span class="g-opacity-0_5">(full width)</span></a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-masonry-col-4.html">Column 4</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-masonry-col-4-fullwidth.html">Column 4 <span class="g-opacity-0_5">(full width)</span></a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Blog - Masonry -->
+                        <!-- Blog - Single items -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--pages--blog--single-item" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--pages--blog--single-item">Single items</a>-->
+                        <!-- Submenu (level 2) -->
+                        <!--<ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--pages--blog--single-item" aria-labelledby="nav-link--pages--blog--single-item">
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-single-item-1.html">Single item 1</a>
+                            </li>
+                            <li class="dropdown-item ">
+                                <a class="nav-link" href="unify-main/blog/blog-single-item-2.html">Single item 2</a>
+                            </li>
+                        </ul>-->
+                        <!-- End Submenu (level 2) -->
+                        <!--</li>-->
+                        <!-- End Blog - Single items -->
+                        <!--</ul>
+                        </li>-->
+                        <!-- End Blog -->
+                        <!-- Features -->
+                        <!--<li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                            <a id="nav-link--features" class="nav-link g-py-7 g-px-0" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features">Features</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu--features" aria-labelledby="nav-link--features">-->
+                        <!-- Features - Headers -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="unify-main/shortcodes/headers/index.html">Headers</a>
+                        </li>-->
+                        <!-- End Features - Headers -->
+                        <!-- Features - Promo blocks -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="unify-main/shortcodes/promo/index.html">Promo Blocks</a>
+                        </li>-->
+                        <!-- End Features - Promo blocks -->
+                        <!-- Features - Sliders -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--features--sliders" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features--sliders">Sliders</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--features--sliders" aria-labelledby="nav-link--features--sliders">
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="revolution-slider/index.html">Revolution sliders</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="master-slider/index.html">Master sliders</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                        <!-- End Features - Sliders -->
+                        <!-- Features - Pop-ups -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--features--pop-ups" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features--pop-ups">Pop-ups</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--features--pop-ups" aria-labelledby="nav-link--features--pop-ups">
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="unify-main/shortcodes/shortcode-base-lightbox-options.html">Lightbox</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="unify-main/shortcodes/shortcode-base-modals.html">Modals</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="unify-main/shortcodes/shortcode-blocks-gallery-grid.html">Gallery</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                        <!-- End Features - Pop-ups -->
+                        <!-- Features - Maps -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--features--maps" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features--maps">Maps</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--features--maps" aria-labelledby="nav-link--features--maps">
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="unify-main/shortcodes/shortcode-base-google-maps.html">Google Maps</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="unify-main/shortcodes/shortcode-base-maps-with-pins.html">Maps With Pins</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="unify-main/shortcodes/shortcode-base-vector-maps.html">Vector Maps</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                        <!-- End Features - Maps -->
+                        <!-- Features - Footers -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--features--footers" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--features--footers">Footers</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2" id="nav-submenu--features--footers" aria-labelledby="nav-link--features--footers">
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="unify-main/shortcodes/footers/shortcode-blocks-footer-classic.html">Classic Footers</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="unify-main/shortcodes/footers/shortcode-blocks-footer-contact-forms.html">Contact Forms</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="unify-main/shortcodes/footers/shortcode-blocks-footer-maps.html">Footers Maps</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="unify-main/shortcodes/footers/shortcode-blocks-footer-modern.html">Modern Footers</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                        <!-- End Features - Footers -->
+                        <!--</ul>
+                        </li>-->
+                        <!-- End Features -->
+                        <!-- Shortcodes -->
+                        <!--<li class="nav-item  g-mx-10--lg g-mx-15--xl">
+                            <a href="unify-main/shortcodes/index.html" class="nav-link g-py-7 g-px-0">Shortcodes</a>
+                        </li>-->
+                        <!-- End Shortcodes -->
+                        <!-- Demos -->
+                        <!--<li class="nav-item hs-has-sub-menu  g-mx-10--lg g-mx-15--xl" data-animation-in="fadeIn" data-animation-out="fadeOut">
+                            <a id="nav-link-demos" class="nav-link g-py-7 g-px-0" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-demos">Demos</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-18 g-mt-8--lg--scrolling" id="nav-submenu-demos" aria-labelledby="nav-link-demos">-->
+                        <!-- Demos - One Pages -->
+                        <!--<li class="dropdown-item hs-has-sub-menu ">
+                            <a id="nav-link--demos--one-page" class="nav-link" href="#" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu--demos--one-page">One Pages</a>
+
+                            <ul class="hs-sub-menu list-unstyled u-shadow-v11 u-dropdown-col-2 g-brd-top g-brd-primary g-brd-top-2 g-min-width-220 g-mt-minus-2 hs-reversed" id="nav-submenu--demos--one-page" aria-labelledby="nav-link--demos--one-page">
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/accounting/index.html" target="_blank">Accounting</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/agency/index.html" target="_blank">Agency</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/app/index.html" target="_blank">App</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/architecture/index.html" target="_blank">Architecture</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/business/index.html" target="_blank">Business</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/charity/index.html" target="_blank">Charity</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/consulting/index.html" target="_blank">Сonsulting</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/construction/index.html" target="_blank">Construction</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/courses/index.html" target="_blank">Courses</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/corporate/index.html" target="_blank">Corporate</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/event/index.html" target="_blank">Event</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/gym/index.html" target="_blank">GYM</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/lawyer/index.html" target="_blank">Lawyer</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/music/index.html" target="_blank">Music</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/photography/index.html" target="_blank">Photography</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/real-estate/index.html" target="_blank">Real Estate</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/restaurant/index.html" target="_blank">Restaurant</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/shipping/index.html" target="_blank">Shipping</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/spa/index.html" target="_blank">Spa</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/travel/index.html" target="_blank">Travel</a>
+                                </li>
+                                <li class="dropdown-item ">
+                                    <a class="nav-link" href="one-pages/wedding/index.html" target="_blank">Wedding</a>
+                                </li>
+                            </ul>
+                        </li>-->
+                        <!-- End Demos - One Pages -->
+                        <!-- Demos - Admin Template -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="admin-template/dashboards/dashboard-v1.html" target="_blank">Admin Template <span class="u-label g-rounded-3 g-font-size-10 g-bg-lightred g-py-3 g-pos-rel g-top-minus-1 g-ml-5">New</span></a>
+                        </li>-->
+                        <!-- End Demos - Admin Template -->
+                        <!-- Demos - E-Commerce -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="e-commerce/home-page-1.html" target="_blank">E-Commerce <span class="g-opacity-0_5">(44 Pages)</span></a>
+                        </li>-->
+                        <!-- End Demos - E-Commerce -->
+                        <!-- Demos - University -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="multipage/education/home-page-1.html" target="_blank">University <span class="g-opacity-0_5">(13 Pages)</span></a>
+                        </li>-->
+                        <!-- End Demos - University -->
+                        <!-- Demos - Marketing -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="multipage/marketing/home-page-1.html" target="_blank">Marketing <span class="g-opacity-0_5">(10 Pages)</span></a>
+                        </li>-->
+                        <!-- End Demos - Marketing -->
+                        <!-- Demos - Real Estate -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="multipage/real-estate/home-page-1.html" target="_blank">Real Estate <span class="g-opacity-0_5">(13 Pages)</span></a>
+                        </li>-->
+                        <!-- End Demos - Real Estate -->
+                        <!-- Demos - Blogs & Magazines -->
+                        <!--<li class="dropdown-item ">
+                            <a class="nav-link" href="multipage/blog-magazine/classic/bm-classic-home-page-1.html" target="_blank">Blogs &amp; Magazines  <span class="g-opacity-0_5">(6 Pages)</span></a>
+                        </li>-->
+                        <!-- End Demos - Blogs & Magazines -->
+                        <!--</ul>
+                        </li>-->
+                        <!-- End Demos -->
+                        <!--</ul>
+                        </div>-->
                         <!-- End Navigation -->
-                        <div class="d-inline-block g-hidden-md-down g-pos-rel g-valign-middle g-pl-30 g-pl-0--lg">
-                            <a class="btn u-btn-outline-primary g-font-size-13 text-uppercase g-py-10 g-px-15" href="https://devcloudapi.foxitsoftware.com/cloud">Online PDF-SDK</a>
-                        </div>
+
                     </div>
                 </nav>
             </div>
         </header>
-<!-- End Header -->
+        <!-- End Header -->
 
 
-        
-        <section class="g-bg-gray-light-v5">
-            <div class="container g-py-100">
-                <div class="row justify-content-center g-mb-110">
-                    <div class="col-lg-8">
-                        <!-- Heading -->
-                        <div class="text-center">
-                            <span class="d-block g-color-primary g-font-size-20 mb-5">PDF Library Cloud Collaboration, Online PDF and PDF Editor with Live Analytics API</span>
-                            <h2 class="h1 g-color-black g-font-weight-600 mb-5">Online PDF Library, PDF-SDK <br>An API for viewing Printing <br>Manipulating PDF Library files</h2>
-                            <p class="lead mb-5">
-                        A PDF Library | PDF Editor which performs the most indemand PDF functionalities <br><br>Feature of embeding a powerful PDF viewer enabling users to do even more with PDF. 
-                            </p>
-                            <a class="btn btn-xl u-btn-outline-black g-font-weight-600 g-font-size-default g-px-35" href="/documentation.html">Dynamic PDF-Library Products</a>
-                        </div>
-                        <!-- End Heading -->
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div>
+            <h1 class="display-4">Easy PDF Library and PDF SDK</h1>
+            <h2>How to use Easy PDF Library and PDF SDK to create PDF Apps</h2>
+            <p>Reference: <a href="https://pdfonline.com">Easy PDF Library and PDF SDK</a></p>
+            <p>Easy PDF Library is a PDF SDK to create PDF Apps quickly</p>
+            <ol type="A">
+                <li>Download and install Easy PDF SDK to get the PDF Library for calling PDF API.</a></li>
+                <li>Start Easy PDF Action Center.</li>
+                <li>Click on Explore (PDF) Printer SDK.</li>
+                <li>Create a PDF App using Easy PDF's Library.</li>
+                <li>Set PDF Library code for Image, Signature, Encryption, etc.</li>
+                <li>Set Input PDF Document type to optimize PDF App.</li>
+                <li>Select programming language to generate source code for your PDF APP.</li>
+                <li>Generate and download a project file for your PDF APP with PDF Library source code.</li>
+                <li>Access Easy PDF's library to access PDF API for your busiess needs in your software making use of PDF library API.</li>
+            </ol>
 
-
-
-        <section>
-            <div class="container g-pt-100">
-                <header class="text-center g-width-80x--md mx-auto g-mb-70">
-                    <div class="u-heading-v6-2 text-center g-mb-20">
-                        <h3 class="g-font-size-12 text-uppercase g-font-weight-600"><strong>PDF-Library</strong></h3>
-                        <p class="h3 u-heading-v6__title g-brd-primary g-color-gray-dark-v2 g-font-weight-600">PDF-Library | PDF-SDK What is it</p>
-                    </div><!-- Table Inverse -->
-                    <p class="lead">Application developers uses PDF-Library, the powerful, standards-compliant PDF technology to securely display, edit, annotate, format, organize, search PDF documents, fill PDF forms and to perform online collaboration in real-time.
-                    <br><br>PDF Library is an API for viewing, editing, collaborate and manipulating PDF files. PDF has become more and more recurrent and software companies aims to provide developers with complete PDF reader functionality, PDF content extraction, PDF Form functionalities and Cloud based Collaborarion features.
-                        <br><br>PDF SDK is a set of tools that help user to develop software that interacts with PDFs and PDF. The SDK - Software Development Kit contains type libraries, header files, sample code, documentation and simple utilities.
-                    </p>
-            
-                <div class="col-md-12">
-                    <div class="table-responsive">
-                        
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        
-        <section class="g-bg-secondary g-py-100">
-            <div class="container">
-                <header class="text-center g-width-80x--md mx-auto g-mb-70">
-                    <div class="u-heading-v6-2 text-center g-mb-20">
-                        <h6 class="g-font-size-12 text-uppercase g-font-weight-600">Leading PDF Library Features</h6>
-                        <h2 class="h3 u-heading-v6__title g-brd-primary g-color-gray-dark-v2 g-font-weight-600">Efficient online PDF-Library What should it provide?</h2>
-                    </div>
-                    <p class="lead"> <span class="g-color-primary">Powerful yet simple</span> unified document services, workflows and analytics platform for organizations that require accurate PDF rendering that comes with professional support.</p>
-                </header>
-
-                <!-- Icon Blocks -->
-                <div class="row">
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-cloud-upload u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">Start in the Cloud</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Foxit provides a foundation to share PDFs, edit together, and collaborate on the same document. No more emailing attachments or dealing with multiple versions of a file, and no more device constraints.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-share u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">Share and Present</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">You can always add more people to your collaborations such as reviewers to give final approval and feedback. Simply share the same URL with the built-in share button and Foxit Developer Cloud will enable you to see the latest changes and conversations. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-communication-171 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">Start as a Team</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">A team can be as formal or flexible as you need it to be. Share a Foxit Developer Cloud generated link to everyone who shares the same manager, or create a team for a special project. With Foxit Developer Cloud, you’ll have a central place in the cloud to communicate and collaborate.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-education-197 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">Host Online Meetings and Get Work Done in Real Time</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">With one click, anyone inside or outside your company can join your online meeting from any device. You can work in real time to co-author PDF documents and use the built-in IM to foster teamwork.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-finance-206 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">Chat-based Workflow</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Let ideas flow in real-time with out-of-the-box group chat. Automatically add people who join the same collaboration session with optional on-screen notifications.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-communication-129 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">Work Anywhere from any Device</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Integrate the best-in-class productivity solution in your systems. Share and review PDF documents across any device with Foxit Developer Cloud API. </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-finance-118 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">Results-Focused</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Data-driven analytics to measure what activities are driving business results.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-finance-203 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">Business Process Automation</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Streamline, automate, and transform processes with Foxit Developer Cloud API's capabilities, workflows, and custom apps.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-finance-007 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">Enterprise Social Network</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Integrate with your intranet system to empower employees across your organization to connect, share, and work better together.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-education-014 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">Accurate PDF Rendering</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Foxit’s high fidelity rendering PDF engine provides reliable and consistent rendering and viewing of even the largest and most complex documents.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-education-008 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">PDF Annotations</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Leave notes and comments for others or yourself to see. Apply stamps, watermarks and other annotations and markup and/or in the viewer.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-education-051 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">PDF Signature</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Sign and secure PDF documents just like you’d do on a piece of paper with PSI (Pressure Sensitive Ink) signatures.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-education-092 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">PDF Forms</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Fill PDF forms programmatically. Give end users the ability to fill out digital forms that connect flawlessly to your systems.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 g-mb-30">
-                            <div class="u-shadow-v21 g-bg-white rounded g-pa-30">
-                                <div class="media g-mb-15">
-                                    <div class="d-flex mr-4">
-                                        <span class="g-color-gray-dark-v5 g-font-size-26">
-                                            <i class="icon-education-135 u-line-icon-pro"></i>
-                                        </span>
-                                    </div>
-                                    <div class="media-body">
-                                        <h3 class="h5 g-color-black mb-20">PDF Page Manipulation</h3>
-                                        <div class="g-width-30 g-brd-bottom g-brd-primary g-my-15"></div>
-                                        <p class="g-color-gray-dark-v4 g-mb-0">Create, split, merge and delete files programmatically. Allow your users to add, delete and re-shuffle pages, in any order.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-
-                <!-- End Icon Blocks -->
-
-                <!-- Icon Blocks -->
-                <!-- End Icon Blocks -->
-                <!-- Icon Blocks -->
-                <!-- End Icon Blocks -->
-                <!-- End Icon Blocks -->
-
-            </div>
-        </section>
-      
-
-        
-        
-
-<!-- Call To Action -->
-<section class="g-bg-primary g-color-white g-pa-30" style="background-image: url(https://devcloudapi.foxitsoftware.com/assets/img/bg/pattern5.png);">
-    <div class="d-md-flex justify-content-md-center text-center">
-        <div class="align-self-md-center">
-            <p class="lead g-font-weight-400 g-mr-20--md g-mb-15 g-mb-0--md">Check out the most Powerful, Efficient Dynamic PDF Library</p>
+            <p>Easy PDF Library is for developing PDF applications that requires PDF functionality. It works with c#, ASP.Net, ASP, Java, JavaScript, PHP, c++, etc.. PDF libraries coupled with a comfortable visual interface lets software developers perform various operations with PDFs and develop powerful PDF solutions in desktop environments as well as server platforms.</p>
         </div>
-        <div class="align-self-md-center">
-            <a class="btn btn-lg u-btn-white text-uppercase g-font-weight-600 g-font-size-12" target="_blank" href="https://devcloudapi.foxitsoftware.com/cloud">Start Now</a>
+        <div>
+            <h1>What programs can open a PDF File?</h1>
+            <h2>About: Adobe Acrobat Reader DC software is the free global standard for reliably viewing, printing, and commenting on PDF documents.</h2>
+            <p>
+                Reference: <a href="https://get2.adobe.com/reader/">Acrobat DC - View, sign, comment on, and share PDFs for free.</a>
+            </p>
+            <p>
+                Adobe Acrobat Reader DC - The leading PDF viewer to print, sign, and annotate PDFs.
+            </p>
+            <p>
+                Adobe Acrobat Pro DC - Do everything you can do in Acrobat Reader, plus create, protect, convert and edit your PDFs with a 7-day free trial. Continue viewing PDFs after trial ends.
+            </p>
         </div>
-    </div>
-</section>
-<!-- End Call To Action -->
-
-
-                <!-- Footer -->
-<div id="contacts-section" class="g-bg-black-opacity-0_9 g-color-white-opacity-0_8 g-py-60">
-    <div class="container">
-        <div class="row">
-            <!-- Footer Content -->
-            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
-                <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
-                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">About Us</h2>
-                </div>
-
-                <p>Foxit is the industry leader in <a href="https://developers.FoxitSoftware.com" target="_blank">PDF SDK Technology</a>. We help you to add complete PDF functionality to your project and develop across all platforms and environments on one Core API.</p>
-            </div>
-            <!-- End Footer Content -->
-            <!-- Footer Content -->
-            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
-                <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
-                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Other Products</h2>
-                </div>
-
-                <article>
-                    <h3 class="h6 g-mb-2">
-                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/windows/" target="_blank">Windows PDF SDK</a>
-                    </h3>
-                </article>
-
-                <hr class="g-brd-white-opacity-0_1 g-my-10">
-
-                <article>
-                    <h3 class="h6 g-mb-2">
-                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/android" target="_blank">Android PDF SDK</a>
-                    </h3>
-                </article>
-
-                <hr class="g-brd-white-opacity-0_1 g-my-10">
-
-                <article>
-                    <h3 class="h6 g-mb-2">
-                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/ios/" target="_blank">iOS PDF SDK</a>
-                    </h3>
-                </article>
-
-                <hr class="g-brd-white-opacity-0_1 g-my-10">
-
-                <article>
-                    <h3 class="h6 g-mb-2">
-                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/uwp/" target="_blank">UWP PDF SDK</a>
-                    </h3>
-                </article>
-
-                <hr class="g-brd-white-opacity-0_1 g-my-10">
-
-                <article>
-                    <h3 class="h6 g-mb-2">
-                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/mac/" target="_blank">Mac PDF SDK</a>
-                    </h3>
-                </article>
-
-                <hr class="g-brd-white-opacity-0_1 g-my-10">
-
-                <article>
-                    <h3 class="h6 g-mb-2">
-                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/linux/" target="_blank">Linux PDF SDK</a>
-                    </h3>
-                </article>
-
-                <hr class="g-brd-white-opacity-0_1 g-my-10">
-
-                <article>
-                    <h3 class="h6 g-mb-2">
-                        <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/pdf-sdk/web/" target="_blank">Web PDF SDK</a>
-                    </h3>
-                </article>
-            </div>
-            <!-- End Footer Content -->
-            <!-- Footer Content -->
-            <div class="col-lg-3 col-md-6 g-mb-40 g-mb-0--lg">
-                <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
-                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Useful Links</h2>
-                </div>
-
-                <nav class="text-uppercase1">
-                    <ul class="list-unstyled g-mt-minus-10 mb-0">
-                        <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
-                            <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/case-studies/">Case Studies</a>
-                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
-                            </h4>
-                        </li>
-                        <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
-                            <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/industry/">Industry</a>
-                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
-                            </h4>
-                        </li>
-                        <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
-                            <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/about-us/">About Us</a>
-                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
-                            </h4>
-                        </li>
-                        <li class="g-pos-rel g-brd-bottom g-brd-white-opacity-0_1 g-py-10">
-                            <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/about-us/sdk-press-releases/">Press Release</a>
-                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
-                            </h4>
-                        </li>
-                        <li class="g-pos-rel g-py-10">
-                            <h4 class="h6 g-pr-20 mb-0">
-                                <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/support/">Contact Us</a>
-                                <i class="fa fa-angle-right g-absolute-centered--y g-right-0"></i>
-                            </h4>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <!-- End Footer Content -->
-            <!-- Footer Content -->
-            <div class="col-lg-3 col-md-6">
-                <div class="u-heading-v2-3--bottom g-brd-white-opacity-0_8 g-mb-20">
-                    <h2 class="u-heading-v2__title h6 text-uppercase mb-0">Our Contacts</h2>
-                </div>
-
-                <address class="g-bg-no-repeat g-font-size-12 mb-0" style="background-image: url(https://devcloudapi.foxitsoftware.com/assets/img/maps/map2.png);">
-                    <!-- Location -->
-                    <div class="d-flex g-mb-20">
-                        <div class="g-mr-10">
-                            <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
-                                <i class="fa fa-map-marker"></i>
-                            </span>
-                        </div>
-                        <p class="mb-0">41841 Albrae Street, <br> Fremont, CA 94538, USA</p>
-                    </div>
-                    <!-- End Location -->
-                    <!-- Phone -->
-                    <div class="d-flex g-mb-20">
-                        <div class="g-mr-10">
-                            <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
-                                <i class="fa fa-phone"></i>
-                            </span>
-                        </div>
-                        <p class="mb-0">Sales: 1-866-680-3668 <br> Support: 1-866-693-6948</p>
-                    </div>
-                    <!-- End Phone -->
-                    <!-- Email and Website -->
-                    <div class="d-flex g-mb-20">
-                        <div class="g-mr-10">
-                            <span class="u-icon-v3 u-icon-size--xs g-bg-white-opacity-0_1 g-color-white-opacity-0_6">
-                                <i class="fa fa-globe"></i>
-                            </span>
-                        </div>
-                        <p class="mb-0">
-                            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="mailto:sales@foxitsoftware.com">sales@foxitsoftware.com</a>
-                            <br>
-                            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com">developers.foxitsoftware.com</a>
-                        </p>
-                    </div>
-                    <!-- End Email and Website -->
-                </address>
-            </div>
-            <!-- End Footer Content -->
+        <div>
+            <h1>What is the best free PDF reader?</h1>
+            <h2>The 15 Best Free PDF Readers of 2020</h2>
+            <p>Reference: <a href="https://blog.hubspot.com/marketing/best-free-pdf-reader">The 15 Best Free PDF Readers</a></p>
+            <p>
+                The 5 Best Free PDF Readers for Windows and Mac
+            </p>
+            <ol type="A">
+                <li><a href="https://www.foxitsoftware.com/pdf-reader/">Foxit Reader</a> - The best free PDF reader &amp; viewer used by over 560 million users. Foxit PDF reader for Windows, Mac, and more. A speedy PDF reader alternative to Adobe Reader.</li>
+                <li><a href="https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html">Adobe Acrobat Reader DC</a> - Download free Adobe Acrobat Reader DC software for your Windows, Mac OS and Android devices to view, print, and comment on PDF documents.</li>
+                <li><a href="http://www.drumlinsecurity.com/javelindownloads.html">Javelin PDF Reader</a> - Javelin PDF readers provide all the core functionality needed for viewing standard PDF files and PDF files encrypted using our free Drumlin Publisher software (.drmz and .drmx files). </li>
+                <li><a href="https://www.google.com/drive/">Google Drive</a> - With Google Drive on the web, you can view things like videos, PDFs, Microsoft Office files, audio files, and photos.</li>
+                <li>Your Web Browser - PDF documents have increasingly become popular. A broad range of PDF document Readers have been developed but at times you may need to view PDF online using a browser. Many official documents often come in the PDF format and may pose a challenge especially when you have not installed a PDF Reader. Going online, Google PDF Viewer, for instance, can help open the document. There are a variety of ways, for example, using the Chrome PDF Viewer or the Firefox PDF Viewer can help you get what you need to be done. Google Drive PDF Viewer, i.e. PDF Viewer, Safari PDF Viewer are also helpful.</li>
+            </ol>
+            <p>
+                The 5 Best Free PDF Readers for Windows
+            </p>
+            <ol type="A">
+                <li><a href="https://www.gonitro.com/pdf-reader">Nitro Reader</a></li>
+                <li><a href="https://www.tracker-software.com/product/pdf-xchange-editor">PDF-XChange Editor</a></li>
+                <li><a href="https://mupdf.com/">MuPDF</a></li>
+                <li><a href="https://www.sumatrapdfreader.org/free-pdf-reader.html">SumatraPDF</a></li>
+                <li><a href="https://www.investintech.com/resources/freetools/slimpdfreader/">Slim PDF</a></li>
+            </ol>
+            <p>
+                The 5 Best Free PDF Readers for Mac
+            </p>
+            <ol type="A">
+                <li><a href="https://pdf-reader-premium.en.softonic.com/mac">PDF Reader Premium</a></li>
+                <li><a href="https://support.apple.com/guide/preview/view-pdfs-and-images-prvw11470/mac">Preview</a></li>
+                <li><a href="https://skim-app.sourceforge.io/">Skim</a></li>
+                <li><a href="https://www.sodapdf.com/?utm_expid=34174773-73.iQr-5Yj-ToKC8JeU7aoQVQ.0&utm_referrer=https%3A%2F%2Fwww.google.com%2F">Soda PDF</a></li>
+                <li><a href="https://www.haihaisoft.com/PDF_Reader_download.aspx">Haihaisoft Reader</a></li>
+            </ol>
         </div>
-    </div>
-</div>
-<!-- End Footer -->
-
-                <!-- Copyright Footer -->
-<footer class="g-bg-gray-dark-v1 g-color-white-opacity-0_8 g-py-20">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 text-center text-md-left g-mb-10 g-mb-0--md">
-                <div class="d-lg-flex">
-                    <small class="d-block g-font-size-default g-mr-10 g-mb-10 g-mb-0--md">2020 &copy; <a href="https://www.foxitsoftware.com" title="Foxit Software">Foxit Software</a> Incorporated. All Rights Reserved.</small>
-                    <ul class="u-list-inline">
-                        <li class="list-inline-item">
-                            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="https://developers.foxitsoftware.com/about-us/privacy-policy/">Privacy Policy</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/terms">Terms of Service</a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="g-color-white-opacity-0_8 g-color-white--hover" href="/Support">Support</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-md-4 align-self-center">
-                <ul class="list-inline text-center text-md-right mb-0">
-                    <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Facebook">
-                        <a href="https://www.facebook.com/foxitsoftware" class="g-color-white-opacity-0_5 g-color-white--hover">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Youtube">
-                        <a href="https://www.youtube.com/channel/UCgh3Bs-EnS4Lwv4Cb96lG_Q" class="g-color-white-opacity-0_5 g-color-white--hover">
-                            <i class="fa fa-youtube"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Linkedin">
-                        <a href="https://www.linkedin.com/company/foxit-corporation" class="g-color-white-opacity-0_5 g-color-white--hover">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item g-mx-10" data-toggle="tooltip" data-placement="top" title="Twitter">
-                        <a href="https://twitter.com/foxitsoftware" class="g-color-white-opacity-0_5 g-color-white--hover">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</footer>
-<!-- End Copyright Footer -->
-
-        <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{
-     "bottom": 15,
-     "right": 15
-   }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
-    <i class="hs-icon hs-icon-arrow-top"></i>
-</a>
 
     </main>
 
     <div class="u-outer-spaces-helper"></div>
-        <!-- JS Global Compulsory -->
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/jquery/jquery.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/popper.js/popper.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
 
-<!-- JS Implementing Plugins -->
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/appear.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/slick-carousel/slick/slick.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/typedjs/typed.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/malihu-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/slick-carousel/slick/slick.js"></script>
-
-<!-- JS Unify -->
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/hs.core.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.carousel.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.header.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.counter.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.scrollbar.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/helpers/hs.hamburgers.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.tabs.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/components/text-animation/hs.text-slideshow.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.go-to.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/components/hs.popup.js"></script>
-
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
-
-<!-- JS Revolution Slider -->
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
-
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="https://devcloudapi.foxitsoftware.com/assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <!-- JS Global Compulsory -->
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+    <script src="/assets/vendor/popper.js/popper.min.js"></script>
+    <script src="/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
 
-<!-- JS Customization -->
-<script src="https://devcloudapi.foxitsoftware.com/assets/js/custom.js"></script>
+    <!-- JS Implementing Plugins -->
+    <script src="/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+    <script src="/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="/assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+    <script src="/assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+    <script src="/assets/vendor/chosen/chosen.jquery.js"></script>
+    <script src="/assets/vendor/image-select/src/ImageSelect.jquery.js"></script>
+    <script src="/assets/vendor/masonry/dist/masonry.pkgd.min.js"></script>
+    <script src="/assets/vendor/imagesloaded/imagesloaded.js"></script>
+    <script src="/assets/vendor/slick-carousel/slick/slick.js"></script>
 
+    <!-- JS Unify -->
+    <script src="/assets/js/hs.core.js"></script>
+    <script src="/assets/js/components/hs.header.js"></script>
+    <script src="/assets/js/helpers/hs.hamburgers.js"></script>
+    <script src="/assets/js/components/hs.scroll-nav.js"></script>
+    <script src="/assets/js/components/hs.go-to.js"></script>
+    <script src="/assets/js/components/hs.sticky-block.js"></script>
+    <script src="/assets/js/helpers/hs.height-calc.js"></script>
+    <script src="/assets/js/components/hs.carousel.js"></script>
 
-<!-- JS Plugins Init. -->
-<script>
-    $(document).on('ready', function () {
-        // initialization of carousel
-        $.HSCore.components.HSCarousel.init('.js-carousel');
+    <!-- JS Custom -->
+    <script src="/assets/js/custom.js"></script>
 
-        // initialization of tabs
-        $.HSCore.components.HSTabs.init('[role="tablist"]');
+    <!-- JS Plugins Init. -->
+    <script>
+        $(document).on('ready', function () {
+            // initialization of carousel
+            $.HSCore.components.HSCarousel.init('.js-carousel');
 
-        // initialization of text animation (typing)
-        $(".u-text-animation.u-text-animation--typing").typed({
-            strings: [
-                "document analytics",
-                "engagement tracking",
-                "lead insights"
-            ],
-            typeSpeed: 60,
-            loop: true,
-            backDelay: 1500
+            // Header
+            $.HSCore.components.HSHeader.init($('#js-header'));
+            $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+            // initialization of HSMegaMenu plugin
+            $('.js-mega-menu').HSMegaMenu({
+                event: 'hover',
+                pageContainer: $('.container'),
+                breakpoint: 991
+            });
+
+            // initialization of go to
+            $.HSCore.components.HSGoTo.init('.js-go-to');
+
+            $.HSCore.helpers.HSHeightCalc.init();
         });
 
-        // initialization of go to
-        $.HSCore.components.HSGoTo.init('.js-go-to');
+        $(window).on('load', function () {
+            // initialization of HSScrollNav
+            $.HSCore.components.HSScrollNav.init($('#js-scroll-nav'), {
+                duration: 700,
+                over: $('.u-secondary-navigation')
+            });
 
-        // initialization of HSScrollBar component
-        $.HSCore.components.HSScrollBar.init($('.js-scrollbar'));
+            // initialization of masonry.js
+            $('.masonry-grid').imagesLoaded().then(function () {
+                $('.masonry-grid').masonry({
+                    // options
+                    columnWidth: '.masonry-grid-sizer',
+                    itemSelector: '.masonry-grid-item',
+                    percentPosition: true
+                });
+            });
 
-        // initialization of popups
-        $.HSCore.components.HSPopup.init('.js-fancybox');
-
-    });
-
-    $(window).on('load', function () {
-        // initialization of header
-        $.HSCore.components.HSHeader.init($('#js-header'));
-        $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
-        // initialization of HSMegaMenu component
-        $('.js-mega-menu').HSMegaMenu({
-            event: 'hover',
-            pageContainer: $('.container'),
-            breakpoint: 991
+            // initialization of sticky blocks
+            $.HSCore.components.HSStickyBlock.init('.js-sticky-block');
         });
-    });
-
-    $(window).on('resize', function () {
-        setTimeout(function () {
-            $.HSCore.components.HSTabs.init('[role="tablist"]');
-        }, 200);
-    });
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167851507-1"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-167851507-1');
-</script>
-
-    
-    <script src="https://devcloudapi.foxitsoftware.com/lib/highlight.js/highlight.min.js"></script>
-    <script type="text/javascript">
-        // initialization of counters
-        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
-
-        //hljs.configure({ useBR: true });
-
-        // hljs.initHighlightingOnLoad();
-
-        var editorItems = [];
-
-                    editorItems.push('');
-                
-                    editorItems.push('');
-                
-                    editorItems.push('');
-                
-                    editorItems.push('');
-                
-                    editorItems.push('');
-                        var devItems = [];
-
-                    devItems.push('');
-                
-                    devItems.push('');
-                
-                    devItems.push('');
-                
-                    devItems.push('');
-                
-                    devItems.push('');
-                        $(document).on('click', '.playgroundShowMe', function () {
-            var i = $(this).data('i');
-            var p = $(this).data('p');
-            var ul = $(this).closest('ul');
-            var li = $(this).closest('li');
-            $(ul).find('li.g-brd-blue-left').removeClass('g-brd-blue-left').addClass('g-brd-lightblue-left');
-            $(li).removeClass('g-brd-lightblue-left').addClass('g-brd-blue-left');
-
-            $('.' + p + 'PlaygroundContentItem').hide();
-            $('#' + p + 'PlaygroundContentItem' + i).show();
-            //var code;
-            //if (p === 'edit')
-            //    code = editorItems[i];
-            //else
-            //    code = devItems[i];
-            //var decoded = $('<textarea/>').html(code).text();
-            //$('#' + p + 'PlaygroundContent').html(decoded);
-        });
-        $('.playgroundShowMe[data-i=0]').click();
     </script>
-    <script type="text/javascript">
+
+    <script>
+        // Facebook Like
+        window.fbAsyncInit = function () {
+            // init the FB JS SDK
+            FB.init({
+                appId: '1972702999621713',
+                status: true,
+                xfbml: true,
+                version: 'v2.3'
+            });
+            if (typeof gaSocialTracking != 'undefined') gaSocialTracking.trackFacebook();
+            setTimeout(function () {
+                if (typeof window.fbCallback == 'function') {
+                    window.fbCallback();
+                }
+            }, 3000); // to make sure FB was loaded
+        };
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        // Facebook Like
+
+        // Twitter Follow
+        window.twttr = (function (d, s, id) {
+            var t, js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//platform.twitter.com/widgets.js";
+            fjs.parentNode.insertBefore(js, fjs);
+            return window.twttr || (t = {
+                _e: [], ready: function (f) {
+                    t._e.push(f)
+                }
+            });
+        }(document, "script", "twitter-wjs"));
+        twttr.ready(function (twttr) {
+            twttr.events.bind('tweet', function (event) {
+                if (typeof gaSocialTracking != 'undefined') gaSocialTracking.trackTwitter();
+            });
+        });
+            // Twitter Follow
     </script>
+
+
 
 </body>
 
