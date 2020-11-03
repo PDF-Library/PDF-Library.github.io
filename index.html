@@ -934,6 +934,124 @@
         <section class="container g-py-150">
             <div class="row">
                 <div class="col-lg-12">
+                    <h1>
+                        PDF Library SDK Overview
+                    </h1>
+                    <p>
+                        This provides an overview of the PDF Library SDK. This guide provides an introduction to development using the PDF Library. It describes the  PDF Library, the PDF Library Software Development Kit (SDK), support and licensing options, and  basic development tasks.
+                    </p>
+                    <p>
+                        This guide is intended for programmers who need basic information on the PDF Library and its  capabilities. It assumes familiarity with C programming, common development tasks, and the use of  methods exported by an object code library.
+                    </p>
+                    <p>
+                        A detailed description of the PDF file format. PDF Reference
+
+                        Developing plug-ins for Acrobat and Reader, as well  as for PDF Library applications.
+                        Detailed descriptions of the APIs for Acrobat and  Reader plug-ins, as well as for PDF Library  applications.
+                        An overview of the SnippetRunner tool and the plug-in  snippets provided with the Acrobat
+
+                    </p>
+                    <h2>
+                        Introduction to PDF Library
+                    </h2>
+                    <p>
+                        Designed specifically for OEMs, ISVs, system integrators, and enterprise IT developers, the PDF  Library SDK contains a powerful set of functions for developing third-party solutions and processes  around PDF. The PDF Library is based on the core technology of the Acrobat line of products  and offers complete functionality for generating, manipulating, rendering, and printing PDF documents.
+                    </p>
+                    <p>
+                        The library enables PDF functionality to be seamlessly embedded within applications. It also provides  reliable, accurate and -supported implementation of the latest PDF specification.
+                    </p>
+                    <h2>
+                        The PDF Library and the PDF viewers
+                    </h2>
+                    <p>
+                        The PDF Library shares much of the same source code as the PDF viewing applications (Acrobat  Professional, Acrobat Standard and Reader). There is a large degree of overlap between the  functionality provided by the PDF Library Software Development Kit (SDK) and that of the Acrobat SDK.  They differ in providing access to the Acrobat user interface:
+                    </p>
+                    <ol>
+                        <li>The Acrobat SDK is meant for the plug-in environment, and allows you to control and interact with the Acrobat user interface.</li>
+                        <li>
+                            The PDF Library SDK is intended for interaction between PDF content and other applications, such as high volume batch processing and PDF generation applications. It does not export methods for creating or managing Acrobat UI elements—that is, the AcroView (AV) layer of the core API.
+                        </li>
+                    </ol>
+                    <p>
+                        If you are interested in the documentation and samples in the Acrobat Software Development Kit (SDK),  see the Acrobat Developer Center.
+                    </p>
+                    <h1>
+                        About the PDF Library SDK
+                    </h1>
+                    <p>
+                        This helps you get started with development using the PDF Library SDK. It describes the contents  of each directory in the SDK installation, lists available code samples, and provides platform-specific  information on how to set up the development environment.
+                    </p>
+                    <h2>
+                        PDF Library Supported environments
+                    </h2>
+                    <p>
+                        PDF Library SDK and its project files are supported for the platforms, operating systems, and  compilers listed in Developing Plug-ins and Applications. While it may be possible to use the library in other  development environments, such use is not supported by Developer Support.
+                    </p>
+                    <p>
+                        The PDF Library SDK consists of the following components:
+                    </p>
+                    <ol>
+                        <li>
+                            CorePDF  libraries that provide the functionality
+                        </li>
+                        <li>
+                            Header files that provide access to the libraries
+                        </li>
+                        <li>Sample applications and code snippets showing how to use the library for a variety of purposes</li>
+                        <li>Documentation of installation and development techniques and of the PDF Library APIs</li>
+                    </ol>
+                    <p>
+                        The components that are shipped with the PDF Library SDK are listed in Developing Plug-ins and  Applications. These include the PDF Library, helper libraries, headers, and samples.
+                    </p>
+                    <h2>
+                        Installing the PDF Library SDK
+                    </h2>
+                    <p>
+                        The PDF Library SDK installation process differs depending on the target platform
+                    </p>
+                    <ol>
+                        <li>Windows — Do one of the following:</li>
+                        <li>For the standard version of the PDF Library SDK, unzip PDFLibrarySDKMinSize18.x.y.zip</li>
+                        <li>
+                            For the speed-optimized version of the PDF Library SDK, unzip
+                            PDFLibrarySDKMaxSpeed18.x.y.zip.
+                        </li>
+                        <li>Mac OS — Mount the dmg image, PDFLibrarySDK18.x.y.dmg, and copy the PDFLibrarySDK18.x.y  folder to your local drive. </li>
+                        <li>Linux — A gzip compressed tar file, PDFLibrarySDK18.x.y.tar.gz, is provided; developers  determine where to decompress and install the SDK</li>
+                    </ol>
+                    <h2>Updating to PDF Library SDK </h2>
+                    <p>
+                        All PDF Library SDK APIs are still supported in PDF Library SDK . Other than a few minor code  changes, all you should need to do is recompile your application with the new SDK headers using the  recommended development environment.
+                    </p>
+                    <h3>
+                        Windows PDF Library
+                    </h3>
+                    <p>
+                        If applicable, change PDFLibrary70.lib to PDFLibrary.lib in your project settings.
+                        By default, for 18.x builds, Windows SDK version for all samples and plugins is set to 10.0.15063.0 which is included in Visual Studio 2017 version 15.1.
+                    </p>
+                    <h3>
+                        Mac OS PDF Library
+                    </h3>
+                    <p>
+                        Refer to the sample projects for information on updating. PDF Library SDK uses frameworks instead of  shared libraries. For convenience, the sample applications are built to include the PDF Library frameworks.  The libraries are in the Libs:Mac:PDFLibrary.framework folder. Aliases or proper paths need to be set  to ensure that your applications run properly.
+                        Include PDFLibraryInitCommon.c in the Include:Headers folder to your client project. All C source files must  be compiled as C++ files using the following steps:
+                        1. In the project source pane, select the file(s) and click Get Info.
+                        2. In the General panel, change the File Type: popup from sourcecode.c.c to sourcecode.cpp.cpp.  The Needs Raise Aware flag has been turned off on Mac OS.
+                    </p>
+                    <h3>
+                        Linux PDF Library
+                    </h3>
+                    <p>
+                        Before you can build your product on a Linux platform running the CentOS 7.3 operation system, you must  procure the Clang compiler. We recommend using version 3.9.1 or later, and keeping the compiler in the  directory: /opt/llvm/
+                        Update your makefile to reflect any new libraries in the libs folder.
+                        Important – For linux platform, new libraries libc++, libc++abi and libunwind are now included along with  the existing libraries libgcc and libstdc++ in the packaging and makefiles for samples has been updated for  the same. These libraries are released in PDFLibrarySDK18.x.y/Libs/linux_64/ folder.
+                        Note: Regular support for Linux-32 bit has been withdrawn.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
                     <h1 class="display-4">Easy PDF Library and PDF SDK</h1>
                     <h2>How to use Easy PDF Library and PDF SDK to create PDF Apps</h2>
                     <p>Reference: <a href="https://pdfonline.com">Easy PDF Library and PDF SDK</a></p>
@@ -1015,14 +1133,258 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
+                    <h1>How to Open PDF Files</h1>
+                    <p>
+                        PDF (Portable Document Format) files are widely used to create and share documents, as the PDF will keep formatting intact regardless of the viewer's operating system and software. Because it is a different kind of document file, it requires special software in order to open. Nearly every device will be able to open and view PDFs with the right software.
+                    </p>
+                    <h2>
+                        Windows PDF Files
+                    </h2>
+                    <p>
+                        Download Adobe Reader. This is a free program that can open PDF files so that you can read them. Adobe Reader can be downloaded from <a href="get.adobe.com/reader/">get.adobe.com/reader/</a>. You cannot use it to edit or create PDF files.
+                    </p>
+                    <p>
+                        To learn how to <a href="https://www.wikihow.com/Edit-a-PDF-File">edit PDF files</a>, you can <a href="https://www.wikihow.com/Edit-a-PDF-Online">edit PDF files online</a>.
+                    </p>
+                    <p>
+                        There are a variety of other free PDF reader programs if you don't want to install Adobe Reader.
+                        Windows 8 comes with a PDF reader installed if you don't want to use <a href="https://www.Adobe.com">Adobe Reader</a>.
+                    </p>
+                    <h2>
+                        Mac PDF Files
+                    </h2>
+                    <p>
+                        Double-click the PDF. OS X comes with Preview, a tool that opens a wide variety of files, including PDF files. Preview allows you to read PDF files, but not edit them.
+                        To learn how to <a href="https://www.wikihow.com/Edit-a-PDF-File">edit PDF files</a>.
+                    </p>
+                    <p>
+                        Change the program that OS X uses to open PDFs. If you have a different PDF program and no longer want to use Preview, you can set all PDF files to open with the new program.
+                    </p>
+                    <p>
+                        PDFs won't open in Safari. This is typically caused by an error with the Adobe plugin after updating Safari. You can fix it by manually deleting the plugin and restarting Safari.[2]
+                        Open /Library/Internet Plugins/ and delete AdobePDF.plugin
+                        Open /User/Username/Library/Internet Plugins/ and delete AdobePDF.plugin
+                        Restart Safari and try to open the PDF again.
+                    </p>
+                    <p>
+                        "Adobe could not open PDF name because...". This error typically occurs if you save a PDF file using Safari's "Save As" or "PDF Export" option.
+                        Reopen the PDF in Safari.
+                        Click the Disk (Save) button at the top of the window or in the from the menu that appears when you move your mouse to the bottom-center of the page.
+                        Save the PDF file to your computer.
+                        Open the newly-saved file.
+                    </p>
+                    <h3>
+                        Android PDF Files
+                    </h3>
+                    <p>
+                        Download an app that supports PDF files. While Android does not have "built-in" support for reading PDF files, there are a large number of free apps that will easily open your PDF files. You may even have one of these already installed:
+                        Google Drive
+                        Quickoffice
+                        Adobe Reader
+                        Foxit MobilePDF
+                    </p>
+                    <p>
+
+                        Find the PDF file you want to open. Typically, when you download a PDF file, you can open it from your Notification bar by tapping the completed download. If you need to open the PDF file later, you can do so from your Downloads folder.
+                    </p>
+                    <p>
+                        PDF attempts to open in the wrong app. if your PDF is trying to open in an app that doesn't support PDFs, you may have the default app set wrong.
+                    </p>
+                    <p>
+
+                        Tap the PDF that you want to open. iOS has a built-in PDF reader which can be used to open PDF attachments in emails or PDFs that you find online.
+                    </p>
+                    <p>
+
+                        Tap the open PDF to open the menu. This will allow you to select another app to handle the PDF.
+                    </p>
+                    <p>
+                        Tap "Open in..." or the Share button. If you are viewing the PDF in your Mail app, you will use the Share button. If you are viewing the PDF in Safari, you will use the "Open in..." button. This will display a list of apps that support PDF.
+                    </p>
+                    <p>
+                        Select the app that you want to use. You can add your PDF files to iBooks, or open it in Adobe Reader or any other PDF application you have installed on your iOS device. The PDF will open immediately in your selected app.[4]
+                    </p>
+                    <h4>
+                        Kindle PDF Library
+                    </h4>
+                    <p>
+                        Transfer the PDF file to your Kindle. There are a couple of different ways that you can do this.
+                        You can connect your Kindle to your computer and add the file to your Kindle's storage.
+                        You can wirelessly transfer the PDF file using your free Kindle transfer email.
+                    </p>
+                    <p>
+                        Open the file on your Kindle. Once the PDF file has been transferred, you can select it from your Kindle's library.
+                        There aren't many options for interacting with the PDF on a Kindle, as you can't add additional functionality with other apps.
+                    </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
+                    <h1>
+                        How to Edit a PDF Without Adobe Acrobat?
+                    </h1>
+                    <p>
+                        We've outlined the best PDF editor apps— and Google Drive isn't one of them. For filling in forms and editing layout, you might want to download your PDF from Drive and use one of those apps. But Google Drive can work in a pinch.
+
+                    </p>
+                    <p>
+                        Google Drive makes it easy to convert any PDF into a Google Doc, and and the built-in optical character recognition (OCR) will even extract text from images.Here's how to get started.
+                    </p>
+                    <h2>
+                        Preview Any PDF in Google Drive
+                    </h2>
+                    <p>
+                        Open <a href="https://drive.google.com">drive.google.com</a> in your browser. You can click-and-drag the PDF from your file browser, or you can click New followed by File Upload and browse to the file you want to upload.
+                    </p>
+                    <p>You can read the entire PDF from here. The downside: You can't make any edits or even fill out fillable forms. You also can't copy text that was scanned into a PDF.</p>
+                    <h2>
+                        Convert a PDF File to a Google Doc
+                    </h2>
+                    <p>
+                        Google Drive can automatically transform any PDF into a Google Doc, allowing you to edit the text as you will. Even text in images will transfer over to this document, thanks to Drive's built in OCR capability.
+                    </p>
+                    <p>
+                        Google Drive will now smack your PDF with an ugly stick, removing all images and generally ruining the layout. Still, this is a very quick way to extract the text from a PDF. And the built-in OCR support means you can use this method to convert a series of scanned images into text in just a couple of clicks.
+                    </p>
+                    <h2>Open PDF Files Using Third-Party Readers</h2>
+                    <p>
+                        Google Drive doesn't offer any PDF editing, meaning you can't do things like fill out forms or change a PDF's layout. You can preview a PDF, you can convert a PDF to a Docs file, and that's about it.
+
+                        There are third-party apps you can connect with Google Drive for editing PDF files. To get started, open a PDF, then click Open With &gt; Connect More Apps.
+                    </p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
+                    <h1>
+                        What is PDF Library?
+                    </h1>
+                    <p>
+                        PDF Library is an API for viewing, printing and manipulating PDF files. It is the core technology within the PDF product family and aims to provide developers with complete PDF reader functionality as well as PDF content extraction. The PDF Library was written in C but also has interfaces for Java (via JNI) and .NET development. The full version of PDFLibrary is distributed under a commercial license.
+                    </p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>
+                        Tecnology of PDF Library
+                    </h1>
+                    <ol>
+                        <li>Create, edit, inspect, render, and print PDFs</li>
+                        <li>C++, C#, .NET and Java interfaces and extensive code samples</li>
+                        <li>Futureproof and fully-supported by PDF experts</li>
+                    </ol>
+                    <h2>Incorporate PDF technologies into your own applications</h2>
+                    <p>
+                        The PDF Library SDK is a low-level PDF library that contains a powerful set of native C/C++ APIs with interfaces  for .NET and Java APIs. Systems integrators, independent software vendors (ISVs), enterprise IT developers, and others can integrate PDF functionality within custom applications in a client and / or server environment.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>
+                        PDF Library Features
+                    </h1>
+                    <ul>
+                        <li>Create PDFs</li>
+                        <li>Edit PDFs</li>
+                        <li>Assemble PDFs</li>
+                        <li>Embed and subset fonts</li>
+                        <li>View &amp; Render PDF files</li>
+                        <li>Add Annotations</li>
+                        <li>Add watermarks</li>
+                        <li>Password-protect&nbsp;PDF files</li>
+                        <li>Extract text, metadata, images, &amp; graphics</li>
+                        <li>Convert to PDF/A</li>
+                        <li>PDF optimization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>
+                        Quick PDF Library
+                    </h1>
+                    <p>Want to create, render, print, secure, merge, split, and manipulate PDF files with just a few lines of code on Windows, Mac, Linux, iOS, and Android? Enhance your capability with Quick PDF Library: a powerful and royalty-free developer PDF SDK for adding PDF functionality to your applications.</p>
+                    <p>Quick PDF Library is ideal for independent developers and small and medium-sized businesses and teams (250 employees or less), looking for an affordable, royalty-free, versatile, reliable and agile development kit on which to give PDF capabilities to their applications. Quick PDF Library also includes Foxit’s technology inside, which adds even more power and utility to the SDK.</p>
+                    <p>With more than 900 functions for use with C, C++, C#, Delphi (version 4 to 10.4 Sydney), Objective-C, Swift, Python, PHP, Visual Basic, VB.NET, ASP, PowerBASIC, Pascal and more – it’s like your ultimate PDF toolkit, specifically useful for getting products to market faster. It includes a robust API and is available in a variety of different editions for use on Windows, Mac, Linux, iOS and Android. A source code version is also available for development in Delphi.</p>
+                    <p>Quick PDF Library is licensed on a per developer, per platform basis, and it is fully royalty free at a price of only $499! Work smarter and faster today with Foxit and Debenu.</p>
+
+                    <div class="summy1">
+                        <div class="bk1">
+                            <div class="keyfeature_shade left1"><a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-generation/">Create</a>, <a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-rendering/">render</a> and <a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-printing/">print PDFs</a></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="left1"><a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-security/">Sign, secure and protect PDFs</a></div>
+                        <div class="clearfix"></div>
+                        <div class="bk1">
+                            <div class="keyfeature_shade left1">Create, fill and edit <a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-form-fields/">PDF forms</a></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="left1"><a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-splitting/">Split</a>, <a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-merging-sdk/">merge</a>, append and combine PDFs</div>
+                        <div class="clearfix"></div>
+                        <div class="bk1">
+                            <div class="keyfeature_shade left1"><a href="http://www.debenu.com/products/development/debenu-pdf-library/features/emf-pdf-sdk/">Convert EMF to PDF</a> (Windows only)</div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="left1"><a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-content-extraction/">Extract text and images</a> from PDFs</div>
+                        <div class="clearfix"></div>
+                        <div class="bk1">
+                            <div class="keyfeature_shade left1">Work with <a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-layers-sdk/">PDF Layers</a></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="left1"><a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-properties-metadata-sdk/">Edit initial view and document properties of PDFs</a></div>
+                        <div class="clearfix"></div>
+                        <div class="bk1">
+                            <div class="keyfeature_shade left1">Add text, images and <a href="http://www.debenu.com/products/development/debenu-pdf-library/features/pdf-barcode-generation/">barcodes to PDFs</a></div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="left1">Advanced support for JavaScript, bookmarks, vector graphics, geospatial PDF</div>
+                        <div class="clearfix"></div>
+                        <div class="bk1">
+                            <div class="keyfeature_shade left1">Direct access functionality (load files from disk, not memory)</div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="left1">Annotations, bookmarks and links for easy navigation</div>
+                        <div class="clearfix"></div>
+                        <div class="bk1">
+                            <div class="keyfeature_shade left1">Windows, Mac, iOS and Android support</div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                    <h2>Quick PDF Library Editions</h2>
+                    <p>
+                        Several different editions are available to make development easier in a variety of different programming languages. The SDK is sold on a per platform basis, so if you purchase the Windows version then you have access to all the different editions for Windows and if you purchase the Mac version then you have access to all of the different editions for Mac.
+                    </p>
+                    <h3>Quick PDF Library for Windows</h3>
+                    <ol>
+                        <li>ActiveX – ActiveX COM for Windows development supports C#, Visual C++, C++ Builder, Delphi, Visual Basic, PHP, Python, Java, PowerBASIC and more. 32-bit and 64-bit versions.</li>
+                        <li>DLL – Dynamically-linked library for Windows development supports C, Visual C++, C++ Builder, C#, Visual Basic, Python and more. 32-bit and 64-bit versions.</li>
+                        <li>Delphi – DCUs and optionally source code for development using all versions of Delphi including 4, 5, 6, 7, 2005, 2006, 2007, 2009, 2010, XE, XE2, XE3, XE4, XE5, XE6, XE7, XE8, 10.1, 10.2 and 10.13. 32-bit and 64-bit versions.</li>
+                        <li>LIB – Statically-linked library for Windows development supports C and C++. 32-bit only.</li>
+                    </ol>
+                    <h3>Quick PDF Library for Mac</h3>
+                    <ol>
+                        <li>Dylib – Xcode Dynamic Library for Mac development using Objective-C, Swift, C, C++ and Python. 32-bit and 64-bit.</li>
+                        <li>Delphi – DCUs for development using Delphi XE2, XE3, XE4, XE5, XE6, XE7, XE8, and 10.2 on Windows to generate apps for the Mac operating system. 32-bit only.</li>
+                    </ol>
+                    <h3>Quick PDF Library for iOS</h3>
+                    <ol>
+                        <li>iOS Static Lib – iOS Static Lib for Apple iOS development using Objective-C, Swift, C, C++ and more. 32-bit and 64-bit.</li>
+                    </ol>
+                    <h3>Quick PDF Library for Android</h3>
+                    <ol>
+                        <li>Android Static and Dynamic Lib – Android (API 15, Android 4.0.3 or newer) Static and Dynamic Lib. Android Studio and Visual Studio samples provided. 32-bit and 64-bit.</li>
+                    </ol>
+                    <h3>Quick PDF Library for Linux</h3>
+                    <ol>
+                        <li>Linux – 64-bit operating system</li>
+                        <li>Ubuntu – version 16 and later</li>
+                        <li>CentOS – version 6 and later</li>
+                        <li>Debian – version 8 and later</li>
+                    </ol>
                 </div>
             </div>
         </section>
